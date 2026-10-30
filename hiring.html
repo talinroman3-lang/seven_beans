@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Seven Beans — Join Our Team</title>
+  <meta name="description" content="Join the Seven Beans team in Barcelona. We are looking for passionate people.">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="icon.svg">
+
+  <!-- Google Fonts: Cinzel for high-contrast serif headers, Outfit for modern sans-serif body -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700;800&family=Outfit:wght@200;300;400;500;600&display=swap"
+    rel="stylesheet">
+
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="style.css?v=48">
+</head>
+
+<body>
+
+  <!-- Header Navigation -->
+  <header class="site-header site-header-inverted">
+    <div class="header-container">
+      <a href="index.html" class="brand-logo" aria-label="Seven Beans Home">
+        <img src="icon.svg" alt="Seven Beans" class="brand-logo-img">
+      </a>
+      <div class="lang-switcher">
+        <button class="lang-btn active" data-lang="en">EN</button>
+        <button class="lang-btn" data-lang="es">ES</button>
+        <button class="lang-btn" data-lang="ca">CA</button>
+      </div>
+      <button class="menu-toggle" id="menuToggle" aria-label="Toggle Navigation Menu" aria-controls="navDrawer">
+        <span class="hamburger-line line-1"></span>
+        <span class="hamburger-line line-2"></span>
+        <span class="hamburger-line line-3"></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Navigation Drawer (Overlay Menu) -->
+  <nav class="nav-drawer" id="navDrawer" aria-hidden="true">
+    <div class="drawer-backdrop" id="drawerBackdrop"></div>
+    <div class="drawer-content">
+      <div class="drawer-header-spacing"></div>
+      <ul class="drawer-menu">
+        <li><a href="index.html" class="drawer-link" data-i18n="nav_home">Home</a></li>
+        <li><a href="hiring.html" class="drawer-link" data-i18n="nav_hiring">Join Our Team</a></li>
+        <li><a href="news.html" class="drawer-link" data-i18n="nav_news">News</a></li>
+      </ul>
+      <div class="drawer-footer">
+        <p class="drawer-tagline" data-i18n="drawer_tagline">healthy food & daily rituals</p>
+        <div class="social-links">
+          <a href="https://www.instagram.com/sevenbeans_es?igsh=eGV3bHVqaWQ3amhp" class="social-link"
+            aria-label="Instagram" target="_blank" rel="noopener noreferrer">Instagram</a>
+          <a href="https://www.tiktok.com/@sevenbeans_es?_r=1&_t=ZN-98JMTyutxVW" class="social-link" aria-label="TikTok"
+            target="_blank" rel="noopener noreferrer">TikTok</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <main class="hiring-section">
+    <!-- Full Width Hero Area -->
+    <div class="hiring-hero-wrapper">
+      <!-- Full Width Hero Background -->
+      <div class="hiring-hero-bg">
+        <div class="hiring-hero-overlay"></div>
+      </div>
+
+      <!-- Hero Content -->
+      <div class="hiring-hero-content">
+        <div class="hiring-header-content">
+          <h1 class="hiring-title" data-i18n="hiring_title">Join Our Team</h1>
+          <p class="hiring-subtitle" data-i18n="hiring_subtitle">We are looking for passionate people to join our Seven
+            Beans family</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="hiring-container">
+
+      <div class="hiring-search-wrapper">
+        <svg class="search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+          stroke-linecap="round" stroke-linejoin="round">
+          <circle cx="11" cy="11" r="8"></circle>
+          <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+        </svg>
+        <input type="text" id="jobSearchInput" class="hiring-search-input" placeholder="Search for a position...">
+      </div>
+
+      <div class="jobs-list" id="jobsList">
+        <!-- Job cards will be populated here via JavaScript -->
+      </div>
+
+      <div id="noJobsMessage" class="no-jobs-message hidden" data-i18n="hiring_no_results">
+        No positions found matching your search.
+      </div>
+
+    </div>
+  </main>
+
+  <!-- Site Footer -->
+  <footer class="site-footer">
+    <div class="footer-container">
+      <div class="footer-top">
+        <a href="index.html" class="footer-logo" aria-label="Seven Beans Home">
+          <img src="icon.svg" alt="Seven Beans" class="footer-logo-img">
+        </a>
+        <div class="footer-links">
+          <a href="https://www.instagram.com/sevenbeans_es?igsh=eGV3bHVqaWQ3amhp" class="footer-link" target="_blank"
+            rel="noopener noreferrer">Instagram</a>
+          <span class="footer-separator">&middot;</span>
+          <a href="https://www.tiktok.com/@sevenbeans_es?_r=1&_t=ZN-98JMTyutxVW" class="footer-link" target="_blank"
+            rel="noopener noreferrer">TikTok</a>
+          <span class="footer-separator">&middot;</span>
+          <a href="news.html" class="footer-link" data-i18n="nav_news">News</a>
+          <span class="footer-separator">&middot;</span>
+          <a href="hiring.html" class="footer-link" data-i18n="nav_hiring">Join Our Team</a>
+        </div>
+        <a href="mailto:info@sevenbeans.es" class="footer-email">
+          <svg class="email-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round">
+            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+            <polyline points="22,6 12,13 2,6"></polyline>
+          </svg>
+          info@sevenbeans.es
+        </a>
+      </div>
+      <div class="footer-bottom">
+        <div class="footer-legal-links">
+          <a href="terms.html">Aviso Legal</a>
+          <a href="privacy.html">Política de Privacidad</a>
+          <a href="cookies.html">Política de Cookies</a>
+        </div>
+        <p class="footer-copyright" data-i18n="footer_copyright">© 2026 Seven Beans. A better everyday starts here.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="translations.js"></script>
+  <script type="module" src="main.js"></script>
+</body>
+
+</html>

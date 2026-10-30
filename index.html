@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Seven Beans — Fast-Casual Restaurant in Barcelona</title>
+  <meta name="description" content="A new fast-casual restaurant built around everyday food and daily rituals. Coming soon to Barcelona.">
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="icon.svg">
+
+  <!-- Google Fonts: Cinzel for high-contrast serif headers, Outfit for modern sans-serif body -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700;800&family=Outfit:wght@200;300;400;500;600&display=swap" rel="stylesheet">
+  
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="style.css?v=10.0">
+</head>
+<body>
+
+  <!-- Loading Screen (Micro-animation enhancement) -->
+  <div class="loader-overlay" id="loader">
+    <div class="loader-logo">
+      <img src="icon.svg" alt="Loading Seven Beans..." class="loader-img">
+    </div>
+  </div>
+
+  <!-- Header Navigation -->
+  <header class="site-header site-header-inverted">
+    <div class="header-container">
+      <a href="#" class="brand-logo" aria-label="Seven Beans Home">
+        <img src="icon.svg" alt="Seven Beans" class="brand-logo-img">
+      </a>
+      <div class="lang-switcher">
+        <button class="lang-btn active" data-lang="en">EN</button>
+        <button class="lang-btn" data-lang="es">ES</button>
+        <button class="lang-btn" data-lang="ca">CA</button>
+      </div>
+      <button class="menu-toggle" id="menuToggle" aria-label="Toggle Navigation Menu" aria-expanded="false" aria-controls="navDrawer">
+        <span class="hamburger-line line-1"></span>
+        <span class="hamburger-line line-2"></span>
+        <span class="hamburger-line line-3"></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Navigation Drawer (Overlay Menu) -->
+  <nav class="nav-drawer" id="navDrawer" aria-hidden="true">
+    <div class="drawer-backdrop" id="drawerBackdrop"></div>
+    <div class="drawer-content">
+      <div class="drawer-header-spacing"></div>
+      <ul class="drawer-menu">
+        <li><a href="index.html" class="drawer-link" data-i18n="nav_home">Home</a></li>
+        <li><a href="hiring.html" class="drawer-link" data-i18n="nav_hiring">Join Our Team</a></li>
+        <li><a href="news.html" class="drawer-link" data-i18n="nav_news">News</a></li>
+      </ul>
+      <div class="drawer-footer">
+        <p class="drawer-tagline" data-i18n="drawer_tagline">better everyday food & daily rituals</p>
+        <div class="social-links">
+          <a href="https://www.instagram.com/sevenbeans_es?igsh=eGV3bHVqaWQ3amhp" class="social-link" aria-label="Instagram" target="_blank" rel="noopener noreferrer">Instagram</a>
+          <a href="https://www.tiktok.com/@sevenbeans_es?_r=1&_t=ZN-98JMTyutxVW" class="social-link" aria-label="TikTok" target="_blank" rel="noopener noreferrer">TikTok</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Main Section -->
+  <main class="hero-section">
+    <div class="hero-container">
+      
+      <!-- Logo Typography -->
+      <h1 class="hero-title animate-item">
+        <img src="logo_white.svg" alt="SEVEN BEANS" class="hero-title-img">
+      </h1>
+      
+      <!-- Text and Action Group (Bottom) -->
+      <div class="hero-bottom-content">
+        <!-- Subtitle Description -->
+        <p class="hero-subtitle animate-item" data-i18n="hero_subtitle_1">
+          A new fast-casual restaurant<br>
+          built around everyday food and daily rituals
+        </p>
+        
+        <!-- Location Teaser -->
+        <p class="hero-location animate-item" data-i18n="hero_location">
+          Coming soon to Barcelona
+        </p>
+        
+        <!-- Call to Actions -->
+        <div class="hero-actions animate-item">
+          <div class="voucher-badge">
+            <span class="voucher-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M2 9a3 3 0 0 1 0 6v2a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-2a3 3 0 0 1 0-6V7a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2Z"></path>
+                <path d="M13 5v2"></path>
+                <path d="M13 17v2"></path>
+                <path d="M13 11v2"></path>
+              </svg>
+            </span>
+            <span data-i18n="hero_voucher">Get a 5€ voucher when you join</span>
+          </div>
+          <button class="btn btn-pill" id="scrollToWaitlistBtn" data-i18n="hero_btn_waitlist">Join Waiting List</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Scroll Down Indicator -->
+    <button class="scroll-indicator" id="scrollIndicator" aria-label="Scroll Down to Story">
+      <span class="scroll-chevron"></span>
+      <span class="scroll-chevron"></span>
+      <span class="scroll-chevron"></span>
+    </button>
+  </main>
+
+  <!-- Story Section (Carousel) -->
+  <section class="story-carousel-section" id="storySection">
+    <div class="story-carousel-header animate-item-scroll">
+      <h2 class="story-title-text" data-i18n="story_title">The Story Behind Seven Beans</h2>
+    </div>
+    
+    <div class="story-carousel-wrapper" style="position: relative;">
+      <div class="story-carousel-container animate-item-scroll">
+      
+      <!-- Slide 1 -->
+      <div class="story-card">
+        <img src="story_magic_beans_wood.jpg" alt="Story part 1" class="story-card-bg">
+        <div class="story-card-overlay">
+          <p class="story-card-text" data-i18n="story_p1">Seven Beans takes its name and inspiration from the classic fairy tale "Jack and the Beanstalk". In the story, a few magical beans grows into something extraordinary.</p>
+        </div>
+      </div>
+      
+      <!-- Slide 2 -->
+      <div class="story-card">
+        <img src="story_barista.jpg" alt="Story part 2" class="story-card-bg">
+        <div class="story-card-overlay">
+          <p class="story-card-text" data-i18n="story_p2">We believe that everyday life is shaped by small moments - a good meal, a meaningful conversation, a quiet coffee. Together they create a better day.</p>
+        </div>
+      </div>
+      
+      <!-- Slide 3 -->
+      <div class="story-card">
+        <img src="story_giant_spoon.jpg" alt="Story part 3" class="story-card-bg">
+        <div class="story-card-overlay">
+          <p class="story-card-text" data-i18n="story_p3">This story also inspired the world you'll discover inside Seven Beans. Oversized beans, giant plants and playful details remind us that small things grow.</p>
+        </div>
+      </div>
+
+    </div>
+    
+    <!-- Swipe Indicator -->
+    <div class="swipe-indicator animate-item-scroll">
+      <span class="swipe-chevron"></span>
+      <span class="swipe-chevron"></span>
+      <span class="swipe-chevron"></span>
+    </div>
+    </div>
+  </section>
+
+  <!-- Location Section -->
+  <section class="location-section animate-item-scroll" id="locationSection">
+    <div class="location-container">
+      <div class="location-content">
+        <h2 class="location-title" data-i18n="location_title">Coming to Barcelona</h2>
+        <p class="location-text" data-i18n="location_text">We're building something special in the heart of the city. A place that feels like it's always been here — warm, calm, and yours.</p>
+        <div class="location-pin-box">
+          <svg class="location-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+            <circle cx="12" cy="10" r="3"></circle>
+          </svg>
+          <span class="location-pin-text">Carrer de la Diputació, 349, Eixample, 08009 Barcelona</span>
+        </div>
+        <a href="https://www.google.com/maps/place/Carrer+de+la+Diputaci%C3%B3,+349,+L'Eixample,+08009+Barcelona" 
+           target="_blank" 
+           rel="noopener noreferrer" 
+           class="btn btn-pill w-100-mobile" 
+           style="margin-top: 1.5rem; display: inline-flex; align-items: center; justify-content: center;"
+           data-i18n="location_btn_map">
+           See on Google Maps
+        </a>
+      </div>
+      <div class="location-visual">
+        <iframe 
+          src="https://maps.google.com/maps?q=Carrer%20de%20la%20Diputaci%C3%B3,%20349,%20Barcelona&t=&z=16&ie=UTF8&iwloc=&output=embed" 
+          width="100%" 
+          height="100%" 
+          style="border:0;" 
+          allowfullscreen="" 
+          loading="lazy" 
+          referrerpolicy="no-referrer-when-downgrade"
+          class="location-map-iframe">
+        </iframe>
+      </div>
+    </div>
+  </section>
+
+
+
+
+    <!-- Waiting List Section -->
+  <section class="waitlist-section animate-item-scroll" id="waitlistSection">
+    <div class="waitlist-container">
+      <div class="waitlist-grid">
+        <!-- Left: Form -->
+        <div class="waitlist-form-wrapper">
+          <div id="inlineWaitlistFormContainer">
+            <h2 class="waitlist-title" data-i18n="waitlist_title">Be the first to walk in</h2>
+            <p class="waitlist-subtitle" data-i18n="waitlist_subtitle">Sign up and get early access to our opening, a welcome gift, and the first seat at the table.</p>
+            
+            <div class="waitlist-benefits-wrapper inline-benefits">
+              <ul class="waitlist-benefits">
+                <li class="benefit-item">
+                  <span class="benefit-icon">
+                    <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M15 5v2"/><path d="M15 11v2"/><path d="M15 17v2"/><path d="M5 5h14a2 2 0 0 1 2 2v3a2 2 0 0 0 0 4v3a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-3a2 2 0 0 0 0-4V7a2 2 0 0 1 2-2z"/></svg>
+                  </span>
+                  <span class="benefit-text" data-i18n="waitlist_benefit_1">Invitation to Soft Opening</span>
+                </li>
+                <li class="benefit-item">
+                  <span class="benefit-icon">
+                    <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 12 20 22 4 22 4 12"></polyline><rect x="2" y="7" width="20" height="5"></rect><line x1="12" y1="22" x2="12" y2="7"></line><path d="M12 7H7.5a2.5 2.5 0 0 1 0-5C11 2 12 7 12 7z"></path><path d="M12 7h4.5a2.5 2.5 0 0 0 0-5C13 2 12 7 12 7z"></path></svg>
+                  </span>
+                  <span class="benefit-text" data-i18n="waitlist_benefit_2">A welcome gift on your first visit - 10% voucher</span>
+                </li>
+                <li class="benefit-item">
+                  <span class="benefit-icon">
+                    <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                  </span>
+                  <span class="benefit-text" data-i18n="waitlist_benefit_3">Updates on our progress</span>
+                </li>
+              </ul>
+            </div>
+            
+            <form class="waitlist-inline-form" id="inlineWaitlistForm" novalidate>
+              <div class="form-group">
+                <input type="text" id="inlineNameInput" class="form-input" placeholder=" " required>
+                <label for="inlineNameInput" class="form-label" data-i18n="waitlist_label_name">Your name</label>
+                <span class="form-error-msg hidden" id="nameError"></span>
+              </div>
+              <div class="form-group">
+                <input type="email" id="inlineEmailInput" class="form-input" placeholder=" " required autocomplete="email">
+                <label for="inlineEmailInput" class="form-label" data-i18n="waitlist_label_email">Your email</label>
+                <span class="form-error-msg hidden" id="emailError"></span>
+              </div>
+              
+              <!-- Anti-bot Honeypot Field -->
+              <div class="form-group" style="position: absolute; left: -5000px; top: -5000px;" aria-hidden="true">
+                <input type="text" id="inlineHoneypotInput" class="form-input" tabindex="-1" autocomplete="off">
+                <label for="inlineHoneypotInput">Leave this field blank</label>
+              </div>
+              
+              <div class="form-group phone-group" id="whatsappFieldContainer">
+                <select class="country-select" id="countryCode">
+                  <option value="+34" selected>+34 (ES)</option>
+                  <option value="+376">+376 (AD)</option>
+                  <option value="+1">+1 (US/CA)</option>
+                  <option value="+44">+44 (UK)</option>
+                  <option value="+33">+33 (FR)</option>
+                  <option value="+49">+49 (DE)</option>
+                  <option value="+39">+39 (IT)</option>
+                  <option value="+351">+351 (PT)</option>
+                </select>
+                <div class="input-wrapper">
+                  <input type="tel" id="inlineWhatsappInput" class="form-input" placeholder=" " required>
+                  <label for="inlineWhatsappInput" class="form-label" data-i18n="waitlist_label_phone">Phone number</label>
+                  <span class="form-error-msg hidden" id="phoneError"></span>
+                </div>
+              </div>
+
+              <button type="submit" class="btn btn-pill btn-submit w-100-mobile" id="inlineSubmitBtn">
+                <span class="btn-text" data-i18n="waitlist_btn_submit">Count Me In</span>
+                <span class="btn-spinner"></span>
+              </button>
+            </form>
+            
+            <!-- Hidden SendPulse Form for Data Bridging -->
+            <div id="hiddenSendPulseContainer" style="opacity: 0.01; position: absolute; left: -9999px; z-index: -1; pointer-events: none;">
+            <!-- SendPulse Subscription Form -->
+            <style>.sp-force-hide { display: none;}.sp-form[sp-id="254584"] { display: block; background: #ffffff; padding: 15px; width: 450px; max-width: 100%; border-radius: 8px; border-color: #dddddd; border-style: solid; border-width: 1px; font-family: Arial, "Helvetica Neue", sans-serif; background-repeat: no-repeat; background-position: center; background-size: auto;}.sp-form[sp-id="254584"] input[type="checkbox"] { display: inline-block; opacity: 1; visibility: visible;}.sp-form[sp-id="254584"] .sp-form-fields-wrapper { margin: 0 auto; width: 420px;}.sp-form[sp-id="254584"] .sp-form-control { background: #ffffff; border-color: #cccccc; border-style: solid; border-width: 1px; font-size: 15px; padding-left: 8.75px; padding-right: 8.75px; border-radius: 4px; height: 35px; width: 100%;}.sp-form[sp-id="254584"] .sp-field label { color: #444444; font-size: 13px; font-style: normal; font-weight: bold;}.sp-form[sp-id="254584"] .sp-button-messengers { border-radius: 4px;}.sp-form[sp-id="254584"] .sp-button { border-radius: 4px; background-color: #0089bf; color: #ffffff; width: auto; font-weight: bold;}.sp-form[sp-id="254584"] .sp-button-container { text-align: left;}</style><div class="sp-form-outer sp-force-hide"><div id="sp-form-254584" sp-id="254584" sp-hash="68e41b8645d1ffd7c432ac0ee08444f7d0947232ca75604937421921f5a42758" sp-lang="en" class="sp-form sp-form-regular sp-form-embed" sp-show-options="%7B%22satellite%22%3Afalse%2C%22maDomain%22%3A%22login.sendpulse.com%22%2C%22formsDomain%22%3A%22forms.sendpulse.com%22%2C%22condition%22%3A%22onEnter%22%2C%22scrollTo%22%3A25%2C%22delay%22%3A10%2C%22repeat%22%3A3%2C%22background%22%3A%22rgba(0%2C%200%2C%200%2C%200.5)%22%2C%22position%22%3A%22bottom-right%22%2C%22animation%22%3A%22%22%2C%22hideOnMobile%22%3Afalse%2C%22submitRedirectUrl%22%3A%22%22%2C%22urlFilter%22%3Afalse%2C%22urlFilterConditions%22%3A%5B%7B%22force%22%3A%22hide%22%2C%22clause%22%3A%22contains%22%2C%22token%22%3A%22%22%7D%5D%2C%22analytics%22%3A%7B%22ga%22%3A%7B%22eventLabel%22%3Anull%2C%22send%22%3Afalse%7D%7D%2C%22utmEnable%22%3Afalse%7D"><div class="sp-form-fields-wrapper"><div class="sp-message"><div></div></div><form novalidate="" class="sp-element-container "><div class="sp-field sp-field-full-width" sp-id="sp-2bda18b8-fff9-4d71-a322-4f8efc4f23fd"><div style="font-family: inherit; line-height: 1.2;">Once a week we send a digest with our most popular articles.</div></div><div class="sp-field " sp-id="sp-0c63aa53-343a-4806-96cb-09264a623649"><label class="sp-control-label"><span >Email</span><strong >*</strong></label><input type="email" sp-type="email" name="sform[email]" class="sp-form-control " placeholder="username@gmail.com" sp-tips="%7B%22required%22%3A%22Required%20field%22%2C%22wrong%22%3A%22Wrong%20email%22%7D" autocomplete="on" required="required"></div><div class="sp-field " sp-id="sp-d74ff1c0-059d-4d2d-bf4c-eb8a427376d2"><label class="sp-control-label"><span >Your name</span></label><input type="text" sp-type="name" name="sform[TmFtZQ==]" class="sp-form-control " placeholder="Full name" sp-tips="%7B%7D" autocomplete="on"></div><div class="sp-field " sp-id="sp-d772e9ba-ba1e-4aa5-8307-a8c9b675f01d"><label class="sp-control-label"><span >Phone</span></label><input type="tel" sp-type="phone" name="sform[phone]" class="sp-form-control " placeholder="1234567890" sp-tips="%7B%22wrong%22%3A%22Wrong%20phone%22%7D" autocomplete="on"></div><div class="sp-field " sp-id="sp-848aae33-ce7c-430a-adcb-fa6fa1d3cd9e"><label class="sp-control-label"><span >language</span></label><input type="text" sp-type="input" name="sform[bGFuZ3VhZ2U=]" class="sp-form-control " placeholder="language" sp-tips="%7B%7D" autocomplete="on"></div><div class="sp-field "><label class="sp-control-label"><span >code</span></label><input type="text" sp-type="input" name="sform[Y29kZQ==]" class="sp-form-control " placeholder="code" autocomplete="on"></div><div class="sp-field sp-button-container " sp-id="sp-86301634-84d4-405b-b628-cef9bee83059"><button id="sp-86301634-84d4-405b-b628-cef9bee83059" class="sp-button">Subscribe </button></div></form><div class="sp-link-wrapper sp-brandname__left"><a class="sp-link " target="_blank" href="https://sendpulse.com/forms-powered-by-sendpulse?sn=c2V2ZW5iZWFucy5lcw%3D%3D&amp;from=8430712"><span class="sp-link-img">&nbsp;</span><span translate="FORM.PROVIDED_BY">Provided by SendPulse</span></a></div></div></div></div><script type="text/javascript" async="async" src="//web.webformscr.com/apps/fc3/build/default-handler.js?1784615479719"></script> 
+              <!-- /SendPulse Subscription Form -->
+            </div>
+          </div>
+          
+          <!-- Success View (Hidden initially) -->
+          <div class="waitlist-success-view hidden" id="waitlistSuccessView">
+            <h2 class="waitlist-title" style="display: flex; align-items: center; justify-content: center; gap: 8px;">
+              <span data-i18n="waitlist_success_title">You're in!</span>
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="var(--color-primary)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                <polyline points="22 4 12 14.01 9 11.01"></polyline>
+              </svg>
+            </h2>
+            <p class="waitlist-subtitle" data-i18n="waitlist_success_subtitle">We'll be in touch soon. Meanwhile, follow the journey:</p>
+            <div class="waitlist-socials">
+              <a href="https://www.instagram.com/sevenbeans_es?igsh=eGV3bHVqaWQ3amhp" class="social-link" target="_blank" rel="noopener noreferrer">Instagram</a>
+              <a href="https://www.tiktok.com/@sevenbeans_es?_r=1&_t=ZN-98JMTyutxVW" class="social-link" target="_blank" rel="noopener noreferrer">TikTok</a>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Right: Image (Desktop only) -->
+        <div class="waitlist-image-wrapper">
+          <img src="waitlist_barista.jpg" alt="Seven Beans Team" class="waitlist-image">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Hiring Banner -->
+  <section class="hiring-banner animate-item-scroll">
+    <div class="hiring-banner-content">
+      <h2 data-i18n="hiring_title">Join Our Team</h2>
+      <p data-i18n="hiring_subtitle">We are looking for passionate people to join our Seven Beans family.</p>
+      <a href="hiring.html" class="btn btn-pill w-100-mobile" data-i18n="nav_hiring">Join Our Team</a>
+    </div>
+  </section>
+
+  <!-- JavaScript Behavior -->
+  <!-- Site Footer -->
+  <footer class="site-footer">
+    <div class="footer-container">
+      <div class="footer-top">
+        <a href="#" class="footer-logo" aria-label="Seven Beans Home">
+          <img src="icon.svg" alt="Seven Beans" class="footer-logo-img">
+        </a>
+        <div class="footer-links">
+          <a href="https://www.instagram.com/sevenbeans_es?igsh=eGV3bHVqaWQ3amhp" class="footer-link" target="_blank" rel="noopener noreferrer">Instagram</a>
+          <span class="footer-separator">&middot;</span>
+          <a href="https://www.tiktok.com/@sevenbeans_es?_r=1&_t=ZN-98JMTyutxVW" class="footer-link" target="_blank" rel="noopener noreferrer">TikTok</a>
+          <span class="footer-separator">&middot;</span>
+          <a href="news.html" class="footer-link" data-i18n="nav_news">News</a>
+          <span class="footer-separator">&middot;</span>
+          <a href="hiring.html" class="footer-link" data-i18n="nav_hiring">Join Our Team</a>
+        </div>
+        <a href="mailto:info@sevenbeans.es" class="footer-email">
+          <svg class="email-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+            <polyline points="22,6 12,13 2,6"></polyline>
+          </svg>
+          info@sevenbeans.es
+        </a>
+      </div>
+      <div class="footer-bottom">
+        <div class="footer-legal-links">
+          <a href="terms.html">Aviso Legal</a>
+          <a href="privacy.html">Política de Privacidad</a>
+          <a href="cookies.html">Política de Cookies</a>
+        </div>
+        <p class="footer-copyright" data-i18n="footer_copyright">© 2026 Seven Beans. A better everyday starts here.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="translations.js?v=4"></script>
+  <script type="module" src="main.js?v=14"></script>
+</body>
+</html>

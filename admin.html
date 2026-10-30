@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Seven Beans — Admin Panel</title>
+  
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🫘</text></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700;800&family=Outfit:wght@200;300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css?v=8">
+  <!-- Quill Rich Text Editor -->
+  <link href="https://cdn.jsdelivr.net/npm/quill@2.0.2/dist/quill.snow.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/quill@2.0.2/dist/quill.js"></script>
+</head>
+<body class="admin-body">
+
+  <div class="admin-container">
+    <!-- Login Screen -->
+    <div id="adminLoginScreen" class="admin-login-screen">
+      <div class="admin-card">
+        <img src="logo.svg" alt="Seven Beans Logo" class="admin-logo">
+        <h2 class="admin-title">Admin Login</h2>
+        <p class="admin-subtitle">Please sign in to manage content.</p>
+        
+        <form id="adminLoginForm" class="admin-form">
+          <div class="form-group">
+            <label for="adminEmail">Email Address</label>
+            <input type="email" id="adminEmail" required placeholder="admin@sevenbeans.es">
+          </div>
+          <div class="form-group">
+            <label for="adminPassword">Password</label>
+            <input type="password" id="adminPassword" required placeholder="••••••••">
+          </div>
+          <div id="loginError" class="form-error hidden">Invalid credentials.</div>
+          <button type="submit" class="btn btn-pill btn-full">Sign In</button>
+        </form>
+      </div>
+    </div>
+
+    <!-- Dashboard Screen -->
+    <div id="adminDashboard" class="admin-dashboard hidden">
+      <header class="admin-header">
+        <div class="admin-header-left">
+          <img src="icon.svg" alt="Seven Beans" class="admin-icon">
+          <h2>Seven Beans Admin</h2>
+        </div>
+        <button id="adminLogoutBtn" class="btn btn-outline btn-sm">Log Out</button>
+      </header>
+
+      <main class="admin-main">
+        <div class="admin-card">
+          <h3 id="adminFormTitle" class="admin-card-title">Add New Article</h3>
+          
+          <form id="adminNewsForm" class="admin-form">
+            <!-- English (Source) -->
+            <div class="admin-section">
+              <h4>1. Write in English</h4>
+              <div class="form-group">
+                <label for="newsTitleEn">Title (English)</label>
+                <input type="text" id="newsTitleEn" required placeholder="e.g. Grand Opening Next Week!">
+              </div>
+              <div class="form-group">
+                <label for="newsImageInput">Cover Image (Optional)</label>
+                <input type="file" id="newsImageInput" accept="image/*" class="admin-file-input">
+                <div id="imagePreviewContainer" class="image-preview-container hidden">
+                  <img id="imagePreview" src="" alt="Preview">
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="editorEn">Content (English)</label>
+                <div id="editorEn" class="quill-editor"></div>
+              </div>
+              <div class="form-group">
+                <label for="newsDate">Date</label>
+                <input type="date" id="newsDate" required>
+              </div>
+            </div>
+
+            <!-- Spanish (Auto-translated) -->
+            <div class="admin-section">
+              <h4>2. Spanish Translation</h4>
+              <div class="form-group">
+                <label for="newsTitleEs">Title (Spanish)</label>
+                <input type="text" id="newsTitleEs" required>
+              </div>
+              <div class="form-group">
+                <label for="editorEs">Content (Spanish)</label>
+                <div id="editorEs" class="quill-editor"></div>
+              </div>
+            </div>
+
+            <!-- Catalan (Auto-translated) -->
+            <div class="admin-section">
+              <h4>3. Catalan Translation</h4>
+              <div class="form-group">
+                <label for="newsTitleCa">Title (Catalan)</label>
+                <input type="text" id="newsTitleCa" required>
+              </div>
+              <div class="form-group">
+                <label for="editorCa">Content (Catalan)</label>
+                <div id="editorCa" class="quill-editor"></div>
+              </div>
+            </div>
+
+            <div id="publishError" class="form-error hidden"></div>
+            <div id="publishSuccess" class="form-success hidden">Article published successfully!</div>
+            
+            <div style="display: flex; gap: 12px; margin-top: 16px;">
+              <button type="submit" id="btnPublish" class="btn btn-pill btn-full">Publish Article</button>
+              <button type="button" id="btnCancelEdit" class="btn btn-outline btn-full hidden" style="background: transparent; border-color: #666; color: #666;">Cancel Edit</button>
+            </div>
+          </form>
+        </div>
+
+        <!-- Manage News Card -->
+        <div class="admin-card" style="margin-top: 32px;">
+          <h3 class="admin-card-title">Manage News</h3>
+          <div id="adminNewsList" class="admin-news-list">
+            <p style="text-align: center; color: #666; padding: 20px 0;">Loading news...</p>
+          </div>
+        </div>
+      </main>
+    </div>
+  </div>
+
+  <!-- Firebase Integration Script -->
+  <script src="translations.js"></script>
+  <script type="module" src="main.js?v=11"></script>
+</body>
+</html>

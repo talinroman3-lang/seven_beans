@@ -1,0 +1,20 @@
+[[headers]]
+  for = "/*"
+  [headers.values]
+    # Предотвращает кликджекинг (встраивание сайта во вредоносные iframe)
+    X-Frame-Options = "DENY"
+    
+    # Блокирует XSS-атаки в старых браузерах
+    X-XSS-Protection = "1; mode=block"
+    
+    # Запрещает браузеру "угадывать" тип файлов, защищая от вредоносных скриптов под видом картинок
+    X-Content-Type-Options = "nosniff"
+    
+    # Заставляет все браузеры всегда использовать только безопасное HTTPS соединение
+    Strict-Transport-Security = "max-age=31536000; includeSubDomains; preload"
+    
+    # Защищает информацию о том, откуда пришел пользователь, при переходе на другие сайты
+    Referrer-Policy = "strict-origin-when-cross-origin"
+    
+    # Блокирует доступ к камере, микрофону и геолокации (сайту они не нужны)
+    Permissions-Policy = "geolocation=(), microphone=(), camera=()"

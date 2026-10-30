@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Seven Beans — Job Details</title>
+  <meta name="description" content="Apply for a position at Seven Beans.">
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🫘</text></svg>">
+
+  <!-- Google Fonts: Cinzel for high-contrast serif headers, Outfit for modern sans-serif body -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700;800&family=Outfit:wght@200;300;400;500;600&display=swap" rel="stylesheet">
+  
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="style.css?v=6">
+</head>
+<body>
+
+  <!-- Header Navigation -->
+  <header class="site-header site-header-solid">
+    <div class="header-container">
+      <a href="index.html" class="brand-logo" aria-label="Seven Beans Home">
+        <img src="icon.svg" alt="Seven Beans" class="brand-logo-img">
+      </a>
+      <div class="lang-switcher">
+        <button class="lang-btn active" data-lang="en">EN</button>
+        <button class="lang-btn" data-lang="es">ES</button>
+        <button class="lang-btn" data-lang="ca">CA</button>
+      </div>
+      <button class="menu-toggle" id="menuToggle" aria-label="Toggle Navigation Menu" aria-controls="navDrawer">
+        <span class="hamburger-line line-1"></span>
+        <span class="hamburger-line line-2"></span>
+        <span class="hamburger-line line-3"></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Navigation Drawer (Overlay Menu) -->
+  <nav class="nav-drawer" id="navDrawer" aria-hidden="true">
+    <div class="drawer-backdrop" id="drawerBackdrop"></div>
+    <div class="drawer-content">
+      <div class="drawer-header-spacing"></div>
+      <ul class="drawer-menu">
+        <li><a href="index.html" class="drawer-link" data-i18n="nav_home">Home</a></li>
+        <li><a href="hiring.html" class="drawer-link" data-i18n="nav_hiring">Join Our Team</a></li>
+        <li><a href="news.html" class="drawer-link" data-i18n="nav_news">News</a></li>
+      </ul>
+      <div class="drawer-footer">
+        <p class="drawer-tagline" data-i18n="drawer_tagline">healthy food & daily rituals</p>
+        <div class="social-links">
+          <a href="https://www.instagram.com/sevenbeans_es?igsh=eGV3bHVqaWQ3amhp" class="social-link" aria-label="Instagram" target="_blank" rel="noopener noreferrer">Instagram</a>
+          <a href="https://www.tiktok.com/@sevenbeans_es?_r=1&_t=ZN-98JMTyutxVW" class="social-link" aria-label="TikTok" target="_blank" rel="noopener noreferrer">TikTok</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <main class="job-details-section">
+    <div class="job-details-container">
+      
+      <a href="hiring.html" class="back-link">&larr; <span data-i18n="nav_hiring">Join Our Team</span></a>
+      
+      <div class="job-grid-layout">
+        
+        <!-- Left Column: Job Info -->
+        <div class="job-info-col">
+          <span class="job-tag" data-i18n="hero_location">Coming soon to Barcelona</span>
+          <h1 class="job-detail-title" id="jobTitle">Position Title</h1>
+          
+          <div class="job-meta">
+            <div class="meta-item">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+              <span>Barcelona</span>
+            </div>
+            <div class="meta-item">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>
+              <span>Full-time</span>
+            </div>
+          </div>
+
+          <div class="job-description-content">
+            <h2 data-i18n="job_desc_title">Position Description</h2>
+            <p id="jobDescription">...</p>
+
+            <h2 data-i18n="job_resp_title">Responsibilities</h2>
+            <ul id="jobResponsibilities">
+              <!-- Populated by JS -->
+            </ul>
+
+            <h2 data-i18n="job_req_title">Requirements</h2>
+            <ul id="jobRequirements">
+               <!-- Populated by JS -->
+            </ul>
+          </div>
+        </div>
+
+        <!-- Right Column: Application Form -->
+        <div class="job-apply-col">
+          <div class="apply-box">
+            <h3 data-i18n="job_apply_title">Apply Now</h3>
+            <form id="jobApplicationForm" class="job-form" novalidate>
+              
+              <div class="form-group">
+                <input type="text" id="applyFname" class="form-input" placeholder=" " required>
+                <label for="applyFname" class="form-label" data-i18n="form_fname">First Name</label>
+              </div>
+
+              <div class="form-group">
+                <input type="text" id="applyLname" class="form-input" placeholder=" " required>
+                <label for="applyLname" class="form-label" data-i18n="form_lname">Last Name</label>
+              </div>
+
+              <div class="form-group">
+                <input type="tel" id="applyPhone" class="form-input" placeholder=" " required>
+                <label for="applyPhone" class="form-label" data-i18n="form_phone">Phone</label>
+              </div>
+
+              <div class="form-group">
+                <input type="email" id="applyEmail" class="form-input" placeholder=" " required>
+                <label for="applyEmail" class="form-label" data-i18n="form_email">Email</label>
+              </div>
+
+              <div class="form-group cv-upload-group">
+                <p class="cv-label" data-i18n="form_cv">Upload your CV</p>
+                <label for="applyCv" class="cv-dropzone" id="cvDropzone">
+                  <svg class="upload-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                    <polyline points="17 8 12 3 7 8"></polyline>
+                    <line x1="12" y1="3" x2="12" y2="15"></line>
+                  </svg>
+                  <span class="dropzone-text-primary" data-i18n="form_cv_help_1">Click or drag your CV here</span>
+                  <span class="dropzone-text-secondary" data-i18n="form_cv_help_2">PDF, DOCX, or images (max 5MB)</span>
+                  <input type="file" id="applyCv" class="cv-file-input" accept=".pdf,.doc,.docx,image/*" required>
+                </label>
+                <div id="fileNameDisplay" class="file-name-display hidden"></div>
+              </div>
+
+              <button type="submit" class="btn btn-pill btn-submit btn-apply" id="applySubmitBtn">
+                <span class="btn-text" data-i18n="form_submit">Submit Application</span>
+              </button>
+              
+              <div id="applySuccessMsg" class="apply-success-msg hidden" data-i18n="form_success">
+                Application sent successfully! We will be in touch.
+              </div>
+            </form>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </main>
+
+  <!-- Site Footer -->
+  <footer class="site-footer">
+    <div class="footer-container">
+      <div class="footer-top">
+        <a href="index.html" class="footer-logo" aria-label="Seven Beans Home">
+          <img src="icon.svg" alt="Seven Beans" class="footer-logo-img">
+        </a>
+        <div class="footer-links">
+          <a href="https://www.instagram.com/sevenbeans_es?igsh=eGV3bHVqaWQ3amhp" class="footer-link" target="_blank" rel="noopener noreferrer">Instagram</a>
+          <span class="footer-separator">&middot;</span>
+          <a href="https://www.tiktok.com/@sevenbeans_es?_r=1&_t=ZN-98JMTyutxVW" class="footer-link" target="_blank" rel="noopener noreferrer">TikTok</a>
+          <span class="footer-separator">&middot;</span>
+          <a href="news.html" class="footer-link" data-i18n="nav_news">News</a>
+          <span class="footer-separator">&middot;</span>
+          <a href="hiring.html" class="footer-link" data-i18n="nav_hiring">Join Our Team</a>
+        </div>
+        <a href="mailto:info@sevenbeans.es" class="footer-email">
+          <svg class="email-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+            <polyline points="22,6 12,13 2,6"></polyline>
+          </svg>
+          info@sevenbeans.es
+        </a>
+      </div>
+      <div class="footer-bottom">
+        <p class="footer-copyright" data-i18n="footer_copyright">© 2026 Seven Beans. A better everyday starts here.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="translations.js"></script>
+  <script type="module" src="main.js"></script>
+</body>
+</html>

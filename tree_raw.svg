@@ -1,0 +1,289 @@
+<svg viewBox="0 -300 200 350" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    path, line, circle {
+      stroke-linecap: round;
+      stroke-linejoin: round;
+      fill: none;
+    }
+  </style>
+  <g transform="scale(1, -1)">
+  <!-- Stream 1 -->
+  <g transform="translate(71.5194, 21.5797) scale(1.0, 1.0)">
+    <path d="M 0.0 0.0 L 0.0 -46.816" fill="none" stroke="#FFFFFF" stroke-width="2.5" />
+    <path d="M 0.0 0.0 C 0.0 0.0, -7.682 -0.541, -5.37 -7.999 C -5.37 -7.999, 1.412 -7.764, 0.0 0.0 Z" fill="none" stroke="#FFFFFF" stroke-width="2.5" />
+    <path d="M 0.0 0.0 C 0.0 0.0, -6.062 -4.75, 0.03 -9.634 C 0.03 -9.634, 5.517 -5.641, 0.0 0.0 Z" fill="none" stroke="#FFFFFF" stroke-width="2.5" />
+    <path d="M 0.0 0.0 C 0.0 0.0, -7.515 1.683, -7.436 -6.126 C -7.436 -6.126, -0.871 -7.843, 0.0 0.0 Z" fill="none" stroke="#FFFFFF" stroke-width="2.5" />
+    <path d="M 0.0 0.0 C 0.0 0.0, 1.553 -7.543, 8.64 -4.263 C 8.64 -4.263, 7.508 2.428, 0.0 0.0 Z" fill="none" stroke="#FFFFFF" stroke-width="2.5" />
+    <path d="M 0.0 0.0 C 0.236 -0.495, 7.505 -20.332, 24.088 -24.286" fill="none" stroke="#FFFFFF" stroke-width="2.5" />
+    <path d="M 0.0 0.0 C 0.0 0.0, 4.019 -8.704, 4.012 -21.771" fill="none" stroke="#FFFFFF" stroke-width="2.5" />
+    <path d="M 0.0 0.0 C 0.0 0.0, -9.457 -3.017, -20.012 3.659" fill="none" stroke="#FFFFFF" stroke-width="2.5" />
+    <path d="M 0.0 0.0 C 0.0 0.0, 0.432 7.689, -7.259 6.335 C -7.259 6.335, -7.88 -0.422, 0.0 0.0 Z" fill="none" stroke="#FFFFFF" stroke-width="2.5" />
+    <path d="M 0.0 0.0 C 0.0 0.0, -3.229 -6.991, 4.42 -8.561 C 4.42 -8.561, 7.483 -2.505, 0.0 0.0 Z" fill="none" stroke="#FFFFFF" stroke-width="2.5" />
+    <path d="M 0.0 0.0 C 0.0 0.0, 21.726 3.161, 22.525 22.438" fill="none" stroke="#FFFFFF" stroke-width="2.5" />
+    <path d="M 0.0 0.0 C 0.0 0.0, -7.896 -8.359, -0.752 -19.276" fill="none" stroke="#FFFFFF" stroke-width="2.5" />
+    <path d="M 0.0 0.0 C 0.0 0.0, 11.698 -3.098, 17.997 5.815" fill="none" stroke="#FFFFFF" stroke-width="2.5" />
+    <path d="M 0.0 0.0 C 0.0 0.0, -6.426 -4.245, -0.748 -9.606 C -0.748 -9.606, 5.044 -6.069, 0.0 0.0 Z" fill="none" stroke="#FFFFFF" stroke-width="2.5" />
+    <path d="M 0.0 0.0 C 0.0 0.0, -6.863 3.493, -8.722 -4.091 C -8.722 -4.091, -2.788 -7.382, 0.0 0.0 Z" fill="none" stroke="#FFFFFF" stroke-width="2.5" />
+    <path d="M 0.0 0.0 C 0.0 0.0, 14.061 -3.379, 12.746 12.742" fill="none" stroke="#FFFFFF" stroke-width="2.5" />
+    <path d="M 0.0 0.0 C 0.03 8.689, 0.03 28.628, 0.0 37.219" fill="none" stroke="#FFFFFF" stroke-width="2.5" />
+    <path d="M 0.0 0.0 C 0.0 0.0, 15.151 -1.745, 15.151 11.996" fill="none" stroke="#FFFFFF" stroke-width="2.5" />
+    <path d="M 0.0 0.0 C 0.0 0.0, -4.244 5.294, -8.488 -0.121 C -8.488 -0.121, -4.916 -4.916, 0.0 0.0 Z" fill="none" stroke="#FFFFFF" stroke-width="2.5" />
+    <path d="M 0.0 0.0 C 0.0 0.0, -5.294 -4.244, 0.121 -8.488 C 0.121 -8.488, 4.916 -4.916, 0.0 0.0 Z" fill="none" stroke="#FFFFFF" stroke-width="2.5" />
+    <path d="M 0.0 0.0 C 0.0 0.0, 0.926 -15.272, 13.895 -15.272" fill="none" stroke="#FFFFFF" stroke-width="2.5" />
+    <path d="M 0.0 0.0 C 0.0 0.0, -6.681 1.187, -6.306 -5.683 C -6.306 -5.683, -0.46 -6.938, 0.0 0.0 Z" fill="none" stroke="#FFFFFF" stroke-width="2.5" />
+    <path d="M 0.0 0.0 C 0.0 0.0, 5.05 -4.532, 8.355 1.503 C 8.355 1.503, 4.049 5.652, 0.0 0.0 Z" fill="none" stroke="#FFFFFF" stroke-width="2.5" />
+    <path d="M 0.0 0.0 C 0.01 -9.413, 8.222 -17.041, 18.351 -17.041 C 28.479 -17.041, 36.691 -9.413, 36.702 0.0 L 0.0 0.0 Z" fill="none" stroke="#FFFFFF" stroke-width="2.5" />
+    <path d="M 0.0 0.0 C 2.059 2.927, 4.905 5.062, 8.057 6.891 C 11.615 9.027, 16.79 10.928, 20.801 11.881" fill="none" stroke="#FFFFFF" stroke-width="2.5" />
+    <path d="M 0.0 0.0 C 1.017 1.728, 1.87 2.873, 3.191 4.398 C 4.818 6.228, 6.803 7.706, 8.884 9.177 C 11.745 11.197, 16.285 12.501, 19.613 13.449" fill="none" stroke="#FFFFFF" stroke-width="2.5" />
+    <path d="M 0.0 0.0 C 1.417 2.713, 5.424 5.706, 8.03 7.302" fill="none" stroke="#FFFFFF" stroke-width="2.5" />
+  </g>
+  <!-- Stream 4 -->
+  <g transform="translate(0.0, 0.0) scale(1.0, 1.0)">
+    <path d="Z" fill="none" stroke="#FFFFFF" stroke-width="2.5" />
+    <path d="Z" fill="rgba(255,255,255,0.08)" stroke="#FFFFFF" stroke-width="2.5" />
+  </g>
+  <!-- Stream 5 -->
+  <g transform="translate(0.0, 0.0) scale(1.0, 1.0)">
+    <path d="Z Z Z" fill="rgba(255,255,255,0.08)" stroke="#FFFFFF" stroke-width="2.5" />
+  </g>
+  <!-- Stream 6 -->
+  <g transform="translate(0.0, 0.0) scale(1.0, 1.0)">
+    <path d="Z" fill="rgba(255,255,255,0.08)" stroke="#FFFFFF" stroke-width="2.5" />
+    <path d="Z Z" fill="rgba(255,255,255,0.08)" stroke="#FFFFFF" stroke-width="2.5" />
+  </g>
+  <!-- Stream 7 -->
+  <g transform="translate(0.0, 0.0) scale(1.0, 1.0)">
+    <path d="Z" fill="rgba(255,255,255,0.08)" stroke="#FFFFFF" stroke-width="2.5" />
+    <path d="Z" fill="rgba(255,255,255,0.08)" stroke="#FFFFFF" stroke-width="2.5" />
+  </g>
+  <!-- Stream 8 -->
+  <g transform="translate(0.0, 0.0) scale(1.0, 1.0)">
+    <path d="Z" fill="none" stroke="#FFFFFF" stroke-width="2.5" />
+  </g>
+  <!-- Stream 9 -->
+  <g transform="translate(0.0, 0.0) scale(1.0, 1.0)">
+    <path d="Z" fill="rgba(255,255,255,0.08)" stroke="#FFFFFF" stroke-width="2.5" />
+    <path d="Z" fill="none" stroke="#FFFFFF" stroke-width="2.5" />
+  </g>
+  <!-- Stream 11 -->
+  <g transform="translate(0.0, 0.0) scale(1.0, 1.0)">
+    <path d="Z" fill="rgba(255,255,255,0.08)" stroke="#FFFFFF" stroke-width="2.5" />
+  </g>
+  <!-- Stream 12 -->
+  <g transform="translate(0.0, 0.0) scale(1.0, 1.0)">
+    <path d="Z Z" fill="none" stroke="#FFFFFF" stroke-width="2.5" />
+  </g>
+  <!-- Stream 15 -->
+  <g transform="translate(0.0, 0.0) scale(1.0, 1.0)">
+    <path d="Z" fill="rgba(255,255,255,0.08)" stroke="#FFFFFF" stroke-width="2.5" />
+  </g>
+  <!-- Stream 16 -->
+  <g transform="translate(0.0, 0.0) scale(1.0, 1.0)">
+    <path d="Z Z" fill="none" stroke="#FFFFFF" stroke-width="2.5" />
+  </g>
+  <!-- Stream 20 -->
+  <g transform="translate(0.0, 0.0) scale(1.0, 1.0)">
+    <path d="Z" fill="rgba(255,255,255,0.08)" stroke="#FFFFFF" stroke-width="2.5" />
+  </g>
+  <!-- Stream 21 -->
+  <g transform="translate(0.0, 0.0) scale(1.0, 1.0)">
+    <path d="Z" fill="rgba(255,255,255,0.08)" stroke="#FFFFFF" stroke-width="2.5" />
+    <path d="Z" fill="rgba(255,255,255,0.08)" stroke="#FFFFFF" stroke-width="2.5" />
+  </g>
+  <!-- Stream 22 -->
+  <g transform="translate(0.0, 0.0) scale(1.0, 1.0)">
+    <path d="Z" fill="rgba(255,255,255,0.08)" stroke="#FFFFFF" stroke-width="2.5" />
+  </g>
+  <!-- Stream 23 -->
+  <g transform="translate(0.0, 0.0) scale(1.0, 1.0)">
+    <path d="Z Z" fill="rgba(255,255,255,0.08)" stroke="#FFFFFF" stroke-width="2.5" />
+  </g>
+  <!-- Stream 24 -->
+  <g transform="translate(0.0, 0.0) scale(1.0, 1.0)">
+    <path d="Z" fill="none" stroke="#FFFFFF" stroke-width="2.5" />
+  </g>
+  <!-- Stream 25 -->
+  <g transform="translate(0.0, 0.0) scale(1.0, 1.0)">
+    <path d="Z" fill="rgba(255,255,255,0.08)" stroke="#FFFFFF" stroke-width="2.5" />
+    <path d="Z" fill="none" stroke="#FFFFFF" stroke-width="2.5" />
+  </g>
+  <!-- Stream 26 -->
+  <g transform="translate(0.0, 0.0) scale(1.0, 1.0)">
+    <path d="Z" fill="rgba(255,255,255,0.08)" stroke="#FFFFFF" stroke-width="2.5" />
+    <path d="Z" fill="none" stroke="#FFFFFF" stroke-width="2.5" />
+  </g>
+  <!-- Stream 27 -->
+  <g transform="translate(0.0, 0.0) scale(1.0, 1.0)">
+    <path d="Z" fill="rgba(255,255,255,0.08)" stroke="#FFFFFF" stroke-width="2.5" />
+    <path d="Z" fill="none" stroke="#FFFFFF" stroke-width="2.5" />
+    <path d="Z" fill="none" stroke="#FFFFFF" stroke-width="2.5" />
+  </g>
+  <!-- Stream 28 -->
+  <g transform="translate(0.0, 0.0) scale(1.0, 1.0)">
+    <path d="Z" fill="rgba(255,255,255,0.08)" stroke="#FFFFFF" stroke-width="2.5" />
+  </g>
+  <!-- Stream 29 -->
+  <g transform="translate(0.0, 0.0) scale(1.0, 1.0)">
+    <path d="Z" fill="rgba(255,255,255,0.08)" stroke="#FFFFFF" stroke-width="2.5" />
+  </g>
+  <!-- Stream 33 -->
+  <g transform="translate(0.0, 0.0) scale(1.0, 1.0)">
+    <path d="Z" fill="rgba(255,255,255,0.08)" stroke="#FFFFFF" stroke-width="2.5" />
+  </g>
+  <!-- Stream 34 -->
+  <g transform="translate(0.0, 0.0) scale(1.0, 1.0)">
+    <path d="Z" fill="none" stroke="#FFFFFF" stroke-width="2.5" />
+    <path d="Z Z" fill="none" stroke="#FFFFFF" stroke-width="2.5" />
+  </g>
+  <!-- Stream 35 -->
+  <g transform="translate(0.0, 0.0) scale(1.0, 1.0)">
+    <path d="Z" fill="none" stroke="#FFFFFF" stroke-width="2.5" />
+  </g>
+  <!-- Stream 36 -->
+  <g transform="translate(0.0, 0.0) scale(1.0, 1.0)">
+    <path d="Z" fill="none" stroke="#FFFFFF" stroke-width="2.5" />
+  </g>
+  <!-- Stream 37 -->
+  <g transform="translate(0.0, 0.0) scale(1.0, 1.0)">
+    <path d="Z" fill="none" stroke="#FFFFFF" stroke-width="2.5" />
+  </g>
+  <!-- Stream 39 -->
+  <g transform="translate(0.0, 0.0) scale(1.0, 1.0)">
+    <path d="Z" fill="rgba(255,255,255,0.08)" stroke="#FFFFFF" stroke-width="2.5" />
+  </g>
+  <!-- Stream 40 -->
+  <g transform="translate(0.0, 0.0) scale(1.0, 1.0)">
+    <path d="Z" fill="none" stroke="#FFFFFF" stroke-width="2.5" />
+  </g>
+  <!-- Stream 41 -->
+  <g transform="translate(0.0, 0.0) scale(1.0, 1.0)">
+    <path d="Z" fill="none" stroke="#FFFFFF" stroke-width="2.5" />
+  </g>
+  <!-- Stream 42 -->
+  <g transform="translate(0.0, 0.0) scale(1.0, 1.0)">
+    <path d="Z" fill="rgba(255,255,255,0.08)" stroke="#FFFFFF" stroke-width="2.5" />
+  </g>
+  <!-- Stream 55 -->
+  <g transform="translate(0.0, 0.0) scale(1.0, 1.0)">
+    <path d="Z" fill="rgba(255,255,255,0.08)" stroke="#FFFFFF" stroke-width="2.5" />
+    <path d="Z" fill="none" stroke="#FFFFFF" stroke-width="2.5" />
+  </g>
+  <!-- Stream 57 -->
+  <g transform="translate(0.0, 0.0) scale(1.0, 1.0)">
+    <path d="Z" fill="none" stroke="#FFFFFF" stroke-width="2.5" />
+    <path d="Z" fill="rgba(255,255,255,0.08)" stroke="#FFFFFF" stroke-width="2.5" />
+  </g>
+  <!-- Stream 61 -->
+  <g transform="translate(0.0, 0.0) scale(1.0, 1.0)">
+    <path d="Z" fill="rgba(255,255,255,0.08)" stroke="#FFFFFF" stroke-width="2.5" />
+  </g>
+  <!-- Stream 62 -->
+  <g transform="translate(0.0, 0.0) scale(1.0, 1.0)">
+    <path d="Z Z" fill="rgba(255,255,255,0.08)" stroke="#FFFFFF" stroke-width="2.5" />
+    <path d="Z Z" fill="rgba(255,255,255,0.08)" stroke="#FFFFFF" stroke-width="2.5" />
+    <path d="Z" fill="none" stroke="#FFFFFF" stroke-width="2.5" />
+    <path d="Z" fill="rgba(255,255,255,0.08)" stroke="#FFFFFF" stroke-width="2.5" />
+  </g>
+  <!-- Stream 63 -->
+  <g transform="translate(0.0, 0.0) scale(1.0, 1.0)">
+    <path d="Z" fill="none" stroke="#FFFFFF" stroke-width="2.5" />
+  </g>
+  <!-- Stream 65 -->
+  <g transform="translate(0.0, 0.0) scale(1.0, 1.0)">
+    <path d="Z" fill="rgba(255,255,255,0.08)" stroke="#FFFFFF" stroke-width="2.5" />
+    <path d="Z" fill="rgba(255,255,255,0.08)" stroke="#FFFFFF" stroke-width="2.5" />
+  </g>
+  <!-- Stream 68 -->
+  <g transform="translate(0.0, 0.0) scale(1.0, 1.0)">
+    <path d="Z" fill="none" stroke="#FFFFFF" stroke-width="2.5" />
+  </g>
+  <!-- Stream 70 -->
+  <g transform="translate(0.0, 0.0) scale(1.0, 1.0)">
+    <path d="Z" fill="rgba(255,255,255,0.08)" stroke="#FFFFFF" stroke-width="2.5" />
+    <path d="Z Z Z" fill="rgba(255,255,255,0.08)" stroke="#FFFFFF" stroke-width="2.5" />
+  </g>
+  <!-- Stream 71 -->
+  <g transform="translate(0.0, 0.0) scale(1.0, 1.0)">
+    <path d="Z" fill="rgba(255,255,255,0.08)" stroke="#FFFFFF" stroke-width="2.5" />
+  </g>
+  <!-- Stream 72 -->
+  <g transform="translate(0.0, 0.0) scale(1.0, 1.0)">
+    <path d="Z" fill="rgba(255,255,255,0.08)" stroke="#FFFFFF" stroke-width="2.5" />
+    <path d="Z" fill="none" stroke="#FFFFFF" stroke-width="2.5" />
+  </g>
+  <!-- Stream 73 -->
+  <g transform="translate(0.0, 0.0) scale(1.0, 1.0)">
+    <path d="Z" fill="rgba(255,255,255,0.08)" stroke="#FFFFFF" stroke-width="2.5" />
+  </g>
+  <!-- Stream 74 -->
+  <g transform="translate(0.0, 0.0) scale(1.0, 1.0)">
+    <path d="Z" fill="none" stroke="#FFFFFF" stroke-width="2.5" />
+  </g>
+  <!-- Stream 75 -->
+  <g transform="translate(0.0, 0.0) scale(1.0, 1.0)">
+    <path d="Z" fill="rgba(255,255,255,0.08)" stroke="#FFFFFF" stroke-width="2.5" />
+  </g>
+  <!-- Stream 76 -->
+  <g transform="translate(0.0, 0.0) scale(1.0, 1.0)">
+    <path d="Z" fill="rgba(255,255,255,0.08)" stroke="#FFFFFF" stroke-width="2.5" />
+  </g>
+  <!-- Stream 78 -->
+  <g transform="translate(87.4624, 217.9718) scale(1.0, 1.0)">
+    <path d="M 0.0 0.0 L 0.0 -110.33" fill="none" stroke="#FFFFFF" stroke-width="2.5" />
+  </g>
+  <!-- Stream 79 -->
+  <g transform="translate(74.9346, 148.0379) scale(1.0, 1.0)">
+    <path d="M 0.0 0.0 C 0.0 0.0, -7.682 -0.541, -5.37 -7.999 C -5.37 -7.999, 1.412 -7.764, 0.0 0.0 Z" fill="none" stroke="#FFFFFF" stroke-width="2.5" />
+    <path d="M 0.0 0.0 C 0.0 0.0, -6.062 -4.75, 0.03 -9.634 C 0.03 -9.634, 5.517 -5.641, 0.0 0.0 Z" fill="none" stroke="#FFFFFF" stroke-width="2.5" />
+    <path d="M 0.0 0.0 C 0.0 0.0, -7.515 1.683, -7.436 -6.126 C -7.436 -6.126, -0.871 -7.843, 0.0 0.0 Z" fill="none" stroke="#FFFFFF" stroke-width="2.5" />
+    <path d="M 0.0 0.0 C 0.0 0.0, 1.553 -7.543, 8.64 -4.263 C 8.64 -4.263, 7.508 2.428, 0.0 0.0 Z" fill="none" stroke="#FFFFFF" stroke-width="2.5" />
+    <path d="M 0.0 0.0 C 0.236 -0.495, 7.505 -20.332, 24.088 -24.286" fill="none" stroke="#FFFFFF" stroke-width="2.5" />
+    <path d="M 0.0 0.0 C 0.0 0.0, 4.019 -8.704, 4.012 -21.771" fill="none" stroke="#FFFFFF" stroke-width="2.5" />
+    <path d="M 0.0 0.0 C 0.0 0.0, -9.457 -3.017, -20.012 3.659" fill="none" stroke="#FFFFFF" stroke-width="2.5" />
+  </g>
+  <!-- Stream 80 -->
+  <g transform="translate(102.598, 142.3865) scale(1.0, 1.0)">
+    <path d="M 0.0 0.0 C 0.0 0.0, 0.432 7.689, -7.259 6.335 C -7.259 6.335, -7.88 -0.422, 0.0 0.0 Z" fill="none" stroke="#FFFFFF" stroke-width="2.5" />
+    <path d="M 0.0 0.0 C 0.0 0.0, -3.229 -6.991, 4.42 -8.561 C 4.42 -8.561, 7.483 -2.505, 0.0 0.0 Z" fill="none" stroke="#FFFFFF" stroke-width="2.5" />
+    <path d="M 0.0 0.0 C 0.0 0.0, 21.726 3.161, 22.525 22.438" fill="none" stroke="#FFFFFF" stroke-width="2.5" />
+    <path d="M 0.0 0.0 C 0.0 0.0, -7.896 -8.359, -0.752 -19.276" fill="none" stroke="#FFFFFF" stroke-width="2.5" />
+    <path d="M 0.0 0.0 C 0.0 0.0, 11.698 -3.098, 17.997 5.815" fill="none" stroke="#FFFFFF" stroke-width="2.5" />
+  </g>
+  <!-- Stream 81 -->
+  <g transform="translate(87.5625, 163.7988) scale(1.0, 1.0)">
+    <path d="M 0.0 0.0 C 0.0 0.0, -6.426 -4.245, -0.748 -9.606 C -0.748 -9.606, 5.044 -6.069, 0.0 0.0 Z" fill="none" stroke="#FFFFFF" stroke-width="2.5" />
+    <path d="M 0.0 0.0 C 0.0 0.0, -6.863 3.493, -8.722 -4.091 C -8.722 -4.091, -2.788 -7.382, 0.0 0.0 Z" fill="none" stroke="#FFFFFF" stroke-width="2.5" />
+    <path d="M 0.0 0.0 C 0.0 0.0, 14.061 -3.379, 12.746 12.742" fill="none" stroke="#FFFFFF" stroke-width="2.5" />
+  </g>
+  <!-- Stream 82 -->
+  <g transform="translate(94.3019, 129.272) scale(1.0, 1.0)">
+    <path d="M 0.0 0.0 C 0.0 0.0, 15.151 -1.745, 15.151 11.996" fill="none" stroke="#FFFFFF" stroke-width="2.5" />
+    <path d="M 0.0 0.0 C 0.0 0.0, -4.244 5.294, -8.488 -0.121 C -8.488 -0.121, -4.916 -4.916, 0.0 0.0 Z" fill="none" stroke="#FFFFFF" stroke-width="2.5" />
+    <path d="M 0.0 0.0 C 0.0 0.0, -5.294 -4.244, 0.121 -8.488 C 0.121 -8.488, 4.916 -4.916, 0.0 0.0 Z" fill="none" stroke="#FFFFFF" stroke-width="2.5" />
+  </g>
+  <!-- Stream 83 -->
+  <g transform="translate(70.6804, 109.2751) scale(1.0, 1.0)">
+    <path d="M 0.0 0.0 C 0.0 0.0, 0.926 -15.272, 13.895 -15.272" fill="none" stroke="#FFFFFF" stroke-width="2.5" />
+    <path d="M 0.0 0.0 C 0.0 0.0, -6.681 1.187, -6.306 -5.683 C -6.306 -5.683, -0.46 -6.938, 0.0 0.0 Z" fill="none" stroke="#FFFFFF" stroke-width="2.5" />
+    <path d="M 0.0 0.0 C 0.0 0.0, 5.05 -4.532, 8.355 1.503 C 8.355 1.503, 4.049 5.652, 0.0 0.0 Z" fill="none" stroke="#FFFFFF" stroke-width="2.5" />
+  </g>
+  <!-- Stream 84 -->
+  <g transform="translate(93.219, 199.6478) scale(1.0, 1.0)">
+    <path d="M 0.0 0.0 C 0.0 0.0, 15.151 -1.745, 15.151 11.996" fill="none" stroke="#FFFFFF" stroke-width="2.5" />
+    <path d="M 0.0 0.0 C 0.0 0.0, -4.244 5.294, -8.488 -0.121 C -8.488 -0.121, -4.916 -4.916, 0.0 0.0 Z" fill="none" stroke="#FFFFFF" stroke-width="2.5" />
+    <path d="M 0.0 0.0 C 0.0 0.0, -5.294 -4.244, 0.121 -8.488 C 0.121 -8.488, 4.916 -4.916, 0.0 0.0 Z" fill="none" stroke="#FFFFFF" stroke-width="2.5" />
+  </g>
+  <!-- Stream 85 -->
+  <g transform="translate(69.5975, 179.651) scale(1.0, 1.0)">
+    <path d="M 0.0 0.0 C 0.0 0.0, 0.926 -15.272, 13.895 -15.272" fill="none" stroke="#FFFFFF" stroke-width="2.5" />
+    <path d="M 0.0 0.0 C 0.0 0.0, -6.681 1.187, -6.306 -5.683 C -6.306 -5.683, -0.46 -6.938, 0.0 0.0 Z" fill="none" stroke="#FFFFFF" stroke-width="2.5" />
+    <path d="M 0.0 0.0 C 0.0 0.0, 5.05 -4.532, 8.355 1.503 C 8.355 1.503, 4.049 5.652, 0.0 0.0 Z" fill="none" stroke="#FFFFFF" stroke-width="2.5" />
+  </g>
+  <!-- Stream 86 -->
+  <g transform="translate(144.0344, 238.8387) scale(1.0, 1.0)">
+    <path d="M 0.0 0.0 C -1.327 0.02, -2.554 -0.408, -3.538 -1.144 C -2.864 -0.125, -2.479 1.102, -2.502 2.422 C -2.563 5.75, -5.264 8.475, -8.592 8.562 C -10.346 8.609, -11.942 7.932, -13.105 6.81 C -12.589 7.898, -12.3 9.114, -12.302 10.399 C -12.305 14.954, -16.004 18.704, -20.56 18.764 C -25.235 18.826, -29.045 15.055, -29.045 10.393 C -29.045 9.347, -28.853 8.345, -28.502 7.422 C -29.524 8.142, -30.77 8.567, -32.117 8.565 C -35.491 8.559, -38.28 5.837, -38.364 2.463 C -38.393 1.262, -38.083 0.136, -37.525 -0.828 C -38.301 -0.358, -39.201 -0.081, -40.161 -0.024 C -40.999 5.515, -45.762 9.828, -51.521 9.904 C -58.034 9.991, -63.342 4.736, -63.342 -1.758 C -63.342 -3.216, -63.074 -4.61, -62.585 -5.897 C -64.009 -4.892, -65.746 -4.302, -67.622 -4.304 C -68.0 -4.305, -68.37 -4.339, -68.737 -4.387 C -69.156 -0.558, -72.374 2.471, -76.291 2.574 C -78.481 2.632, -80.473 1.787, -81.925 0.386 C -81.281 1.744, -80.921 3.263, -80.921 4.866 C -80.925 10.553, -85.545 15.234, -91.231 15.309 C -97.068 15.387, -101.824 10.678, -101.824 4.859 C -101.824 3.553, -101.584 2.303, -101.146 1.15 C -102.422 2.05, -103.978 2.58, -105.659 2.577 C -109.871 2.569, -113.353 -0.829, -113.457 -5.04 C -113.495 -6.54, -113.107 -7.945, -112.41 -9.148 C -113.565 -8.45, -114.933 -8.066, -116.393 -8.119 C -120.175 -8.254, -123.235 -11.355, -123.323 -15.139 C -123.417 -19.191, -120.16 -22.507, -116.129 -22.507 L -87.139 -22.506 C -87.254 -23.013, -87.321 -23.537, -87.333 -24.074 C -87.439 -28.597, -83.804 -32.296, -79.305 -32.296 L -23.145 -32.295 C -18.593 -32.374, -14.888 -28.664, -14.974 -24.11 C -15.055 -19.806, -18.575 -16.301, -22.879 -16.236 C -24.728 -16.208, -26.437 -16.805, -27.808 -17.83 C -26.868 -16.41, -26.332 -14.7, -26.365 -12.863 C -26.373 -12.408, -26.427 -11.964, -26.503 -11.528 L -0.191 -11.527 C 3.076 -11.583, 5.736 -8.921, 5.674 -5.651 C 5.616 -2.563, 3.089 -0.046, 0.0 0.0" fill="rgba(255,255,255,0.08)" stroke="#FFFFFF" stroke-width="2.5" />
+    <path d="M 0.0 0.0 C -1.327 0.02, -2.554 -0.408, -3.538 -1.144 C -2.864 -0.125, -2.479 1.102, -2.502 2.422 C -2.563 5.75, -5.264 8.475, -8.592 8.562 C -10.346 8.609, -11.942 7.932, -13.105 6.81 C -12.589 7.898, -12.3 9.114, -12.302 10.399 C -12.305 14.954, -16.004 18.704, -20.56 18.764 C -25.235 18.826, -29.045 15.055, -29.045 10.393 C -29.045 9.347, -28.853 8.345, -28.502 7.422 C -29.524 8.142, -30.77 8.567, -32.117 8.565 C -35.491 8.559, -38.28 5.837, -38.364 2.463 C -38.393 1.262, -38.083 0.136, -37.525 -0.828 C -38.301 -0.358, -39.201 -0.081, -40.161 -0.024 C -40.999 5.515, -45.762 9.828, -51.521 9.904 C -58.034 9.991, -63.342 4.736, -63.342 -1.758 C -63.342 -3.216, -63.074 -4.61, -62.585 -5.897 C -64.009 -4.892, -65.746 -4.302, -67.622 -4.304 C -68.0 -4.305, -68.37 -4.339, -68.737 -4.387 C -69.156 -0.558, -72.374 2.471, -76.291 2.574 C -78.481 2.632, -80.473 1.787, -81.925 0.386 C -81.281 1.744, -80.921 3.263, -80.921 4.866 C -80.925 10.553, -85.545 15.234, -91.231 15.309 C -97.068 15.387, -101.824 10.678, -101.824 4.859 C -101.824 3.553, -101.584 2.303, -101.146 1.15 C -102.422 2.05, -103.978 2.58, -105.659 2.577 C -109.871 2.569, -113.353 -0.829, -113.457 -5.04 C -113.495 -6.54, -113.107 -7.945, -112.41 -9.148 C -113.565 -8.45, -114.933 -8.066, -116.393 -8.119 C -120.175 -8.254, -123.235 -11.355, -123.323 -15.139 C -123.417 -19.191, -120.16 -22.507, -116.129 -22.507 L -87.139 -22.506 C -87.254 -23.013, -87.321 -23.537, -87.333 -24.074 C -87.439 -28.597, -83.804 -32.296, -79.305 -32.296 L -23.145 -32.295 C -18.593 -32.374, -14.888 -28.664, -14.974 -24.11 C -15.055 -19.806, -18.575 -16.301, -22.879 -16.236 C -24.728 -16.208, -26.437 -16.805, -27.808 -17.83 C -26.868 -16.41, -26.332 -14.7, -26.365 -12.863 C -26.373 -12.408, -26.427 -11.964, -26.503 -11.528 L -0.191 -11.527 C 3.076 -11.583, 5.736 -8.921, 5.674 -5.651 C 5.616 -2.563, 3.089 -0.046, 0.0 0.0 Z" fill="none" stroke="#FFFFFF" stroke-width="2.5" />
+  </g>
+
+  </g>
+</svg>
