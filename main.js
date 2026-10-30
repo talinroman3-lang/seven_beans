@@ -731,7 +731,15 @@ document.addEventListener('DOMContentLoaded', () => {
     if (jobApplicationForm) {
       jobApplicationForm.addEventListener('submit', async (e) => {
         e.preventDefault();
+
+        // Запобігаємо повторному відправленню
+        if (applySubmitBtn.disabled) return;
+        applySubmitBtn.disabled = true;
         applySubmitBtn.classList.add('loading');
+        applySubmitBtn.style.pointerEvents = 'none';
+
+        const fileInput = document.getElementById('applyCv');
+        if (fileInput) fileInput.disabled = true;
 
         try {
           const fname = document.getElementById('applyFname')?.value.trim();
@@ -739,7 +747,6 @@ document.addEventListener('DOMContentLoaded', () => {
           const phone = document.getElementById('applyPhone')?.value.trim();
           const email = document.getElementById('applyEmail')?.value.trim();
           const jobTitle = document.getElementById('jobTitle')?.textContent.trim() || 'General';
-          const fileInput = document.getElementById('applyCv');
 
           let fileData = null;
           let fileName = null;
@@ -791,6 +798,9 @@ document.addEventListener('DOMContentLoaded', () => {
         } catch (err) {
           console.error('Submission error:', err);
           applySubmitBtn.classList.remove('loading');
+          applySubmitBtn.disabled = false;
+          applySubmitBtn.style.pointerEvents = '';
+          if (fileInput) fileInput.disabled = false;
           alert('Error sending application. Please try again or email us directly.');
         }
       });
