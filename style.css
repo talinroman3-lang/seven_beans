@@ -2854,18 +2854,139 @@ body:not(.menu-open) .site-header.site-header-inverted:not(.scrolled) .lang-btn:
   display: inline-block;
 }
 
-.btn-apply {
-  width: 100%;
+/* Job Application Submit States & Animations */
+.apply-box {
+  position: relative;
+  min-height: 480px;
 }
 
-.apply-success-msg {
-  margin-top: 24px;
-  padding: 16px;
-  background: #d4edda;
-  color: #155724;
-  border-radius: 8px;
+.btn-apply {
+  width: 100%;
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.btn-apply.loading {
+  opacity: 0.85;
+  cursor: not-allowed;
+}
+
+.btn-apply.loading .btn-spinner {
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  border-radius: 50%;
+  border-top-color: #ffffff;
+  animation: spin 0.8s linear infinite;
+  margin-left: 8px;
+}
+
+/* Uploading Overlay */
+.apply-loading-overlay {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 60px 24px;
   text-align: center;
+  animation: fadeIn 0.3s ease-out;
+}
+
+.apply-spinner-ring {
+  width: 56px;
+  height: 56px;
+  border: 3px solid rgba(42, 31, 26, 0.1);
+  border-top-color: var(--color-primary);
+  border-radius: 50%;
+  animation: spin 0.9s cubic-bezier(0.6, 0.2, 0.4, 0.9) infinite;
+  margin-bottom: 20px;
+}
+
+.apply-loading-text {
+  font-family: var(--font-body);
+  font-size: 15px;
   font-weight: 500;
+  color: var(--color-primary);
+  letter-spacing: 0.5px;
+}
+
+/* Rich Animated Success View */
+.apply-success-view {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 50px 20px 40px;
+  animation: successFadeInUp 0.6s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+@keyframes successFadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(24px) scale(0.97);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+.apply-success-icon-wrap {
+  width: 76px;
+  height: 76px;
+  margin-bottom: 22px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.apply-success-icon-wrap .success-checkmark {
+  width: 72px;
+  height: 72px;
+}
+
+.apply-success-title {
+  font-family: var(--font-serif);
+  font-size: 26px;
+  font-weight: 700;
+  color: var(--color-primary);
+  margin-bottom: 12px;
+  letter-spacing: -0.3px;
+}
+
+.apply-success-subtitle {
+  font-family: var(--font-body);
+  font-size: 15px;
+  line-height: 1.6;
+  color: var(--color-text-muted);
+  max-width: 320px;
+  margin: 0 auto 24px;
+}
+
+.apply-success-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 16px;
+  background: rgba(40, 167, 69, 0.1);
+  border: 1px solid rgba(40, 167, 69, 0.25);
+  border-radius: 999px;
+  font-size: 13px;
+  font-weight: 500;
+  color: #1b632e;
+}
+
+.apply-success-badge .badge-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: #28a745;
+  box-shadow: 0 0 0 3px rgba(40, 167, 69, 0.2);
 }
 
 /* ==========================================================================

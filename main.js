@@ -722,8 +722,10 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     const jobApplicationForm = document.getElementById('jobApplicationForm');
-    const applySuccessMsg = document.getElementById('applySuccessMsg');
+    const applySuccessView = document.getElementById('applySuccessView');
+    const applyLoadingOverlay = document.getElementById('applyLoadingOverlay');
     const applySubmitBtn = document.getElementById('applySubmitBtn');
+    const applyBox = document.querySelector('.apply-box');
 
     // Web App URL з Google Apps Script
     const GOOGLE_SCRIPT_URL = "https://script.google.com/macros/s/AKfycbxZrzNeCf2yhcuv0g8l6NY42MpU9GYSaWtkEISzVOxhtm4wJFgQoUnmp8eZROZkmdcp/exec";
@@ -740,6 +742,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
         const fileInput = document.getElementById('applyCv');
         if (fileInput) fileInput.disabled = true;
+
+        // Показуємо плавний стан завантаження в формі
+        jobApplicationForm.style.display = 'none';
+        if (applyLoadingOverlay) applyLoadingOverlay.classList.remove('hidden');
 
         try {
           const fname = document.getElementById('applyFname')?.value.trim();
@@ -778,25 +784,34 @@ document.addEventListener('DOMContentLoaded', () => {
             fileData
           };
 
-          if (GOOGLE_SCRIPT_URL && GOOGLE_SCRIPT_URL !== "ВСТАВ_СЮДИ_WEB_APP_URL") {
-            await fetch(GOOGLE_SCRIPT_URL, {
-              method: 'POST',
-              mode: 'no-cors',
-              headers: {
-                'Content-Type': 'text/plain;charset=utf-8'
-              },
-              body: JSON.stringify(payload)
-            });
-          } else {
-            console.warn('Google Script URL is not configured yet.');
-          }
+          // Мінімальна затримка для плавності анімації (щоб користувач бачив процес завантаження)
+          const uploadPromise = GOOGLE_SCRIPT_URL && GOOGLE_SCRIPT_URL !== "ВСТАВ_СЮДИ_WEB_APP_URL"
+            ? fetch(GOOGLE_SCRIPT_URL, {
+                method: 'POST',
+                mode: 'no-cors',
+                headers: {
+                  'Content-Type': 'text/plain;charset=utf-8'
+                },
+                body: JSON.stringify(payload)
+              })
+            : Promise.resolve();
 
-          applySubmitBtn.classList.remove('loading');
-          jobApplicationForm.style.display = 'none';
-          if (applySuccessMsg) applySuccessMsg.classList.remove('hidden');
+          const delayPromise = new Promise(resolve => setTimeout(resolve, 900));
+          await Promise.all([uploadPromise, delayPromise]);
+
+          // Приховуємо завантаження і показуємо красиве підтвердження
+          if (applyLoadingOverlay) applyLoadingOverlay.classList.add('hidden');
+          if (applySuccessView) {
+            applySuccessView.classList.remove('hidden');
+            // Якщо присутній заголовок "Apply Now", змінюємо його або ховаємо
+            const applyHeading = applyBox?.querySelector('h3');
+            if (applyHeading) applyHeading.style.display = 'none';
+          }
 
         } catch (err) {
           console.error('Submission error:', err);
+          if (applyLoadingOverlay) applyLoadingOverlay.classList.add('hidden');
+          jobApplicationForm.style.display = '';
           applySubmitBtn.classList.remove('loading');
           applySubmitBtn.disabled = false;
           applySubmitBtn.style.pointerEvents = '';

@@ -105,6 +105,10 @@ window.translations = {
     "form_cv_help_1": "Click or drag your CV here",
     "form_cv_help_2": "PDF, DOCX, or images (max 5MB)",
     "form_submit": "Submit Application",
+    "form_submitting": "Uploading your CV...",
+    "form_success_title": "Resume Sent!",
+    "form_success_msg": "Your application has been received successfully.",
+    "form_success_thanks": "Thank you so much! We will be in touch with you soon.",
     "form_success": "Application sent successfully! We will be in touch.",
     "job_desc_head-chef": "Join the Real Food Revolution. As Head Chef at Seven Beans, you will lead our fire-led kitchen, bringing our scratch-made, locally sourced menu to life. You are a rebel with a cause, passionate about sustainable food and leading a diverse family of cooks.",
     "job_resp_head-chef": "<li>Lead and inspire the kitchen team daily.</li><li>Ensure flawless execution of our real food menu.</li><li>Manage inventory, local suppliers, and food costs.</li><li>Maintain the highest standards of hygiene and safety.</li>",
@@ -235,6 +239,10 @@ window.translations = {
     "form_cv_help_1": "Haz click o arrastra tu CV aquí",
     "form_cv_help_2": "PDF, DOCX o imágenes (máx 5MB)",
     "form_submit": "Enviar Solicitud",
+    "form_submitting": "Subiendo tu CV...",
+    "form_success_title": "¡CV Enviado!",
+    "form_success_msg": "Tu solicitud ha sido recibida con éxito.",
+    "form_success_thanks": "¡Muchas gracias! Nos pondremos en contacto contigo muy pronto.",
     "form_success": "¡Solicitud enviada con éxito! Nos pondremos en contacto contigo."
   },
 
@@ -344,6 +352,10 @@ window.translations = {
     "form_cv_help_1": "Fes clic o arrossega el teu CV aquí",
     "form_cv_help_2": "PDF, DOCX o imatges (màx 5MB)",
     "form_submit": "Enviar Sol·licitud",
+    "form_submitting": "Pujant el teu CV...",
+    "form_success_title": "CV Enviat!",
+    "form_success_msg": "La teva sol·licitud s'ha rebut correctament.",
+    "form_success_thanks": "Moltes gràcies! Ens posarem en contacte amb tu ben aviat.",
     "form_success": "Sol·licitud enviada amb èxit! Ens posarem en contacte amb tu."
   }
 };

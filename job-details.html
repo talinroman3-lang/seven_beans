@@ -140,12 +140,31 @@
 
               <button type="submit" class="btn btn-pill btn-submit btn-apply" id="applySubmitBtn">
                 <span class="btn-text" data-i18n="form_submit">Submit Application</span>
+                <span class="btn-spinner"></span>
               </button>
-              
-              <div id="applySuccessMsg" class="apply-success-msg hidden" data-i18n="form_success">
-                Application sent successfully! We will be in touch.
-              </div>
             </form>
+
+            <!-- Loading overlay during upload -->
+            <div id="applyLoadingOverlay" class="apply-loading-overlay hidden">
+              <div class="apply-spinner-ring"></div>
+              <p class="apply-loading-text" data-i18n="form_submitting">Uploading your CV...</p>
+            </div>
+
+            <!-- Beautiful Animated Success View -->
+            <div id="applySuccessView" class="apply-success-view hidden">
+              <div class="apply-success-icon-wrap">
+                <svg class="success-checkmark" viewBox="0 0 52 52">
+                  <circle class="success-checkmark-circle" cx="26" cy="26" r="25" fill="none"/>
+                  <path class="success-checkmark-check" fill="none" d="M14.1 27.2l7.1 7.2 16.7-16.8"/>
+                </svg>
+              </div>
+              <h3 class="apply-success-title" data-i18n="form_success_title">Resume Sent!</h3>
+              <p class="apply-success-subtitle" data-i18n="form_success_thanks">Thank you so much! We will be in touch with you soon.</p>
+              <div class="apply-success-badge">
+                <span class="badge-dot"></span>
+                <span data-i18n="form_success_msg">Your application has been received successfully.</span>
+              </div>
+            </div>
           </div>
         </div>
 
