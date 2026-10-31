@@ -803,9 +803,17 @@ document.addEventListener('DOMContentLoaded', () => {
           if (applyLoadingOverlay) applyLoadingOverlay.classList.add('hidden');
           if (applySuccessView) {
             applySuccessView.classList.remove('hidden');
-            // Якщо присутній заголовок "Apply Now", змінюємо його або ховаємо
             const applyHeading = applyBox?.querySelector('h3');
             if (applyHeading) applyHeading.style.display = 'none';
+
+            // Оновлюємо переклад для щойно показаних елементів
+            const curLang = localStorage.getItem('sevenbeans_lang') || 'en';
+            if (translations && translations[curLang]) {
+              applySuccessView.querySelectorAll('[data-i18n]').forEach(el => {
+                const k = el.getAttribute('data-i18n');
+                if (translations[curLang][k]) el.innerText = translations[curLang][k];
+              });
+            }
           }
 
         } catch (err) {
