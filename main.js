@@ -435,7 +435,8 @@ document.addEventListener('DOMContentLoaded', () => {
       // Bridge to SendPulse hidden form
       const spForm = document.querySelector('.sp-element-container');
       const spEmail = document.querySelector('.sp-form input[type="email"]') || document.querySelector('input[name*="email"]');
-      const spName = document.querySelector('.sp-form input[type="text"]') || document.querySelector('input[name*="name"]');
+      const spName = document.querySelector('.sp-form input[type="text"]') || document.querySelector('input[name*="name"]') || document.querySelector('input[name*="TmFtZQ"]');
+      const spPhone = document.querySelector('.sp-form input[type="tel"]') || document.querySelector('input[name*="phone"]');
       const spSubmit = document.querySelector('.sp-form button') || document.querySelector('.sp-button');
       
       // Generate unique short code (e.g., A8X2-9KMP)
@@ -464,7 +465,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
         // Fill SendPulse form
         spEmail.value = emailInput.value;
-        // Trigger input event to update React/Vue models if SendPulse uses them
         spEmail.dispatchEvent(new Event('input', { bubbles: true }));
         spEmail.dispatchEvent(new Event('change', { bubbles: true }));
 
@@ -472,6 +472,42 @@ document.addEventListener('DOMContentLoaded', () => {
           spName.value = nameInput.value;
           spName.dispatchEvent(new Event('input', { bubbles: true }));
           spName.dispatchEvent(new Event('change', { bubbles: true }));
+        }
+
+        // Fill Phone in SendPulse with country code
+        if (phoneInput && phoneInput.value.trim()) {
+          const countryCodeSelect = document.getElementById('countryCode');
+          const prefix = countryCodeSelect ? countryCodeSelect.value : '';
+          let rawPhone = phoneInput.value.trim();
+          
+          // Якщо номер ще не містить префікс "+", об'єднуємо код країни і номер
+          let fullPhone = rawPhone;
+          if (!rawPhone.startsWith('+')) {
+            // Видаляємо провідний 0, якщо він є (наприклад, 067... -> +38067...)
+            const cleanNumber = rawPhone.replace(/^0+/, '');
+            fullPhone = `${prefix}${cleanNumber}`;
+          }
+
+          if (spPhone) {
+            spPhone.value = fullPhone;
+            spPhone.dispatchEvent(new Event('input', { bubbles: true }));
+            spPhone.dispatchEvent(new Event('change', { bubbles: true }));
+          }
+
+          // Також страхуємо на випадок кастомних назв змінної телефону в SendPulse
+          const phoneNames = ['sform[phone]', 'sform[Phone]', 'sform[cGhvbmU=]', 'sform[UGhvbmU=]'];
+          phoneNames.forEach(fieldName => {
+            let pField = spForm.querySelector(`input[name="${fieldName}"]`);
+            if (!pField) {
+              pField = document.createElement('input');
+              pField.type = 'hidden';
+              pField.name = fieldName;
+              spForm.appendChild(pField);
+            }
+            pField.value = fullPhone;
+            pField.dispatchEvent(new Event('input', { bubbles: true }));
+            pField.dispatchEvent(new Event('change', { bubbles: true }));
+          });
         }
         
         // Inject Language hidden field
