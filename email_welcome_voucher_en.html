@@ -4,6 +4,8 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <meta name="x-apple-disable-message-reformatting">
+  <meta name="color-scheme" content="light only">
+  <meta name="supported-color-schemes" content="light only">
   <title>Your Magic Bean is Here — Seven Beans</title>
   <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   <!--[if mso]>
@@ -16,8 +18,41 @@
   </noscript>
   <![endif]-->
   <style>
+    :root {
+      color-scheme: light only;
+      supported-color-schemes: light only;
+    }
     table, td, div, h1, h2, h3, p, span, a {
       font-family: 'Outfit', -apple-system, BlinkMacSystemFont, Arial, sans-serif !important;
+    }
+    /* Prevent Dark Mode Color Inversions */
+    [data-ogsc] body, [data-ogsc] .email-container,
+    [data-ogsb] body, [data-ogsb] .email-container {
+      background-color: #FAF9F6 !important;
+    }
+    @media (prefers-color-scheme: dark) {
+      body, .email-body {
+        background-color: #FAF9F6 !important;
+        background-image: linear-gradient(#FAF9F6, #FAF9F6) !important;
+      }
+      .email-container {
+        background-color: #FFFFFF !important;
+        background-image: linear-gradient(#FFFFFF, #FFFFFF) !important;
+      }
+      h1, h2, h3, strong, .brand-heading {
+        color: #2F3C2E !important;
+      }
+      p, td, span {
+        color: #555D50 !important;
+      }
+      .code-badge {
+        background-color: #FAF9F6 !important;
+        color: #2F3C2E !important;
+      }
+      .footer-bg {
+        background-color: #FAF9F6 !important;
+        color: #8C9588 !important;
+      }
     }
     @media screen and (max-width: 600px) {
       .email-container { width: 100% !important; }
@@ -27,8 +62,8 @@
     }
   </style>
 </head>
-<body style="margin:0;padding:0;word-spacing:normal;background-color:#FAF9F6;">
-  <div role="article" aria-roledescription="email" lang="en" style="text-size-adjust:100%;-webkit-text-size-adjust:100%;background-color:#FAF9F6;">
+<body class="email-body" style="margin:0;padding:0;word-spacing:normal;background-color:#FAF9F6;background-image:linear-gradient(#FAF9F6, #FAF9F6);">
+  <div role="article" aria-roledescription="email" lang="en" style="text-size-adjust:100%;-webkit-text-size-adjust:100%;background-color:#FAF9F6;background-image:linear-gradient(#FAF9F6, #FAF9F6);">
     <table role="presentation" style="width:100%;border:none;border-spacing:0;">
       <tr>
         <td align="center" style="padding:40px 10px;">

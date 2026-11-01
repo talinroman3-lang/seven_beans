@@ -4,6 +4,8 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <meta name="x-apple-disable-message-reformatting">
+  <meta name="color-scheme" content="light only">
+  <meta name="supported-color-schemes" content="light only">
   <title>Your 5€ Magic Bean Voucher — Seven Beans</title>
   <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Cinzel:wght@600;700&display=swap" rel="stylesheet">
   <!--[if mso]>
@@ -16,6 +18,10 @@
   </noscript>
   <![endif]-->
   <style>
+    :root {
+      color-scheme: light only;
+      supported-color-schemes: light only;
+    }
     body, table, td, p, a, li, blockquote {
       -ms-text-size-adjust: 100%;
       -webkit-text-size-adjust: 100%;
@@ -35,6 +41,34 @@
     }
     .cinzel {
       font-family: 'Cinzel', Georgia, serif !important;
+    }
+    /* Prevent Dark Mode Inversion in Apple Mail, Outlook and Gmail */
+    [data-ogsc] body, [data-ogsc] .email-container,
+    [data-ogsb] body, [data-ogsb] .email-container {
+      background-color: #EFEBE4 !important;
+    }
+    @media (prefers-color-scheme: dark) {
+      body, .email-body {
+        background-color: #EFEBE4 !important;
+        background-image: linear-gradient(#EFEBE4, #EFEBE4) !important;
+      }
+      .email-container {
+        background-color: #FFFFFF !important;
+        background-image: linear-gradient(#FFFFFF, #FFFFFF) !important;
+      }
+      .hero-cover {
+        background: linear-gradient(180deg, #5A3528 0%, #4A2C22 55%, #3B211A 100%) !important;
+        background-color: #4A2C22 !important;
+      }
+      h1, h2, h3, strong {
+        color: #2F3C2E !important;
+      }
+      .hero-title, .hero-tagline, .hero-cover p, .hero-cover span {
+        color: #FAF6EF !important;
+      }
+      p, td, span {
+        color: #555D50 !important;
+      }
     }
     @media screen and (max-width: 600px) {
       .email-container {
@@ -69,8 +103,8 @@
     }
   </style>
 </head>
-<body style="margin:0;padding:0;background-color:#EFEBE4;word-spacing:normal;">
-  <div role="article" aria-roledescription="email" lang="en" style="background-color:#EFEBE4;padding:24px 0;">
+<body class="email-body" style="margin:0;padding:0;background-color:#EFEBE4;background-image:linear-gradient(#EFEBE4, #EFEBE4);word-spacing:normal;">
+  <div role="article" aria-roledescription="email" lang="en" style="background-color:#EFEBE4;background-image:linear-gradient(#EFEBE4, #EFEBE4);padding:24px 0;">
     <table role="presentation" style="width:100%;border:none;border-spacing:0;background-color:#EFEBE4;">
       <tr>
         <td align="center" style="padding:10px 12px;">
