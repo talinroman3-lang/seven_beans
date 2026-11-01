@@ -549,7 +549,13 @@ document.addEventListener('DOMContentLoaded', () => {
         // Transition to success state immediately for UX
         setTimeout(() => {
           if (inlineWaitlistFormContainer) inlineWaitlistFormContainer.style.display = 'none';
-          if (waitlistSuccessView) waitlistSuccessView.classList.remove('hidden');
+          if (waitlistSuccessView) {
+            waitlistSuccessView.classList.remove('hidden');
+            const waitlistSec = document.getElementById('waitlistSection');
+            if (waitlistSec) {
+              waitlistSec.scrollIntoView({ behavior: 'smooth', block: 'center' });
+            }
+          }
         }, 500);
       } else if (spForm) {
         // Fallback: if we found the form but not the button, try to dispatch submit event
@@ -559,14 +565,26 @@ document.addEventListener('DOMContentLoaded', () => {
         
         setTimeout(() => {
           if (inlineWaitlistFormContainer) inlineWaitlistFormContainer.style.display = 'none';
-          if (waitlistSuccessView) waitlistSuccessView.classList.remove('hidden');
+          if (waitlistSuccessView) {
+            waitlistSuccessView.classList.remove('hidden');
+            const waitlistSec = document.getElementById('waitlistSection');
+            if (waitlistSec) {
+              waitlistSec.scrollIntoView({ behavior: 'smooth', block: 'center' });
+            }
+          }
         }, 500);
       } else {
         console.error('SendPulse form not loaded yet or not found');
         // Fallback simulate delay if SendPulse isn't loaded
         setTimeout(() => {
           if (inlineWaitlistFormContainer) inlineWaitlistFormContainer.style.display = 'none';
-          if (waitlistSuccessView) waitlistSuccessView.classList.remove('hidden');
+          if (waitlistSuccessView) {
+            waitlistSuccessView.classList.remove('hidden');
+            const waitlistSec = document.getElementById('waitlistSection');
+            if (waitlistSec) {
+              waitlistSec.scrollIntoView({ behavior: 'smooth', block: 'center' });
+            }
+          }
         }, 1500);
       }
     });
