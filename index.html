@@ -15,7 +15,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700;800&family=Outfit:wght@200;300;400;500;600&display=swap" rel="stylesheet">
   
   <!-- Custom Styles -->
-  <link rel="stylesheet" href="style.css?v=10.0">
+  <link rel="stylesheet" href="style.css?v=51">
 </head>
 <body>
 
@@ -264,6 +264,19 @@
                   <label for="inlineWhatsappInput" class="form-label" data-i18n="waitlist_label_phone">Phone number</label>
                   <span class="form-error-msg hidden" id="phoneError"></span>
                 </div>
+              </div>
+
+              <!-- Legal Consent Checkboxes (GDPR / RGPD) -->
+              <div class="waitlist-legal-group">
+                <label class="waitlist-legal-checkbox-label" for="waitlistTermsCheck">
+                  <input type="checkbox" id="waitlistTermsCheck" class="custom-checkbox" required>
+                  <span class="legal-text" data-i18n="waitlist_legal_terms">I have read and agree to the <a href="terms.html" target="_blank">Terms of Service</a> and <a href="privacy.html" target="_blank">Privacy Policy</a> *</span>
+                </label>
+                <label class="waitlist-legal-checkbox-label" for="waitlistMarketingCheck">
+                  <input type="checkbox" id="waitlistMarketingCheck" class="custom-checkbox" checked>
+                  <span class="legal-text" data-i18n="waitlist_legal_marketing">I agree to receive news, exclusive offers and rituals from Seven Beans</span>
+                </label>
+                <span class="form-error-msg hidden" id="termsError"></span>
               </div>
 
               <button type="submit" class="btn btn-pill btn-submit w-100-mobile" id="inlineSubmitBtn">

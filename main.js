@@ -353,15 +353,17 @@ document.addEventListener('DOMContentLoaded', () => {
       const honeypotInput = document.getElementById('inlineHoneypotInput');
       
       const phoneInput = document.getElementById('inlineWhatsappInput');
+      const termsCheck = document.getElementById('waitlistTermsCheck');
       const nameError = document.getElementById('nameError');
       const emailError = document.getElementById('emailError');
       const phoneError = document.getElementById('phoneError');
+      const termsError = document.getElementById('termsError');
 
       // Reset errors
       [nameInput, emailInput, phoneInput].forEach(input => {
         if (input) input.classList.remove('error');
       });
-      [nameError, emailError, phoneError].forEach(err => {
+      [nameError, emailError, phoneError, termsError].forEach(err => {
         if (err) { err.classList.add('hidden'); err.innerText = ''; }
       });
 
@@ -411,6 +413,17 @@ document.addEventListener('DOMContentLoaded', () => {
         if (phoneError) {
           phoneError.innerText = "Please enter your phone number";
           phoneError.classList.remove('hidden');
+        }
+        isValid = false;
+      }
+
+      // Terms & Privacy Checkbox Validation
+      if (termsCheck && !termsCheck.checked) {
+        if (termsError) {
+          const currentLang = localStorage.getItem('sevenbeans_lang') || 'en';
+          const msg = translations[currentLang]?.waitlist_error_terms || "Please accept the Terms and Privacy Policy to continue";
+          termsError.innerText = msg;
+          termsError.classList.remove('hidden');
         }
         isValid = false;
       }

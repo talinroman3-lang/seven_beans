@@ -2026,10 +2026,12 @@ body:not(.menu-open) .site-header.site-header-inverted:not(.scrolled) .lang-btn:
 }
 
 .custom-checkbox {
-  width: 20px;
-  height: 20px;
+  width: 18px;
+  height: 18px;
+  min-width: 18px;
   accent-color: var(--color-accent);
   cursor: pointer;
+  margin-top: 2px;
 }
 
 .waitlist-checkbox-wrapper label {
@@ -2037,6 +2039,48 @@ body:not(.menu-open) .site-header.site-header-inverted:not(.scrolled) .lang-btn:
   font-size: 15px;
   color: var(--color-primary);
   cursor: pointer;
+}
+
+/* Legal Checkboxes Group */
+.waitlist-legal-group {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 14px;
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.waitlist-legal-checkbox-label {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  cursor: pointer;
+  font-family: var(--font-body);
+  font-size: 13px;
+  line-height: 1.45;
+  color: var(--color-text-muted);
+}
+
+.waitlist-legal-checkbox-label .legal-text {
+  user-select: none;
+}
+
+.waitlist-legal-checkbox-label a {
+  color: var(--color-primary);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+  transition: color var(--transition-fast);
+}
+
+.waitlist-legal-checkbox-label a:hover {
+  color: var(--color-accent);
+}
+
+.waitlist-legal-group .form-error-msg {
+  font-size: 12px;
+  color: #d9534f;
+  margin-top: 2px;
 }
 
 .whatsapp-field {

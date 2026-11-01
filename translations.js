@@ -56,6 +56,9 @@ window.translations = {
     "waitlist_label_phone": "Phone number",
     "waitlist_label_whatsapp": "I'd also like updates via WhatsApp",
     "waitlist_label_whatsapp_num": "WhatsApp number",
+    "waitlist_legal_terms": "I have read and agree to the <a href=\"terms.html\" target=\"_blank\">Terms of Service</a> and <a href=\"privacy.html\" target=\"_blank\">Privacy Policy</a> *",
+    "waitlist_legal_marketing": "I agree to receive news, exclusive offers and rituals from Seven Beans",
+    "waitlist_error_terms": "Please accept the Terms and Privacy Policy to continue",
     "waitlist_btn_submit": "Count Me In",
     
     // Waitlist Success
@@ -190,6 +193,9 @@ window.translations = {
     "waitlist_label_phone": "Número de teléfono",
     "waitlist_label_whatsapp": "También quiero recibir novedades por WhatsApp",
     "waitlist_label_whatsapp_num": "Número de WhatsApp",
+    "waitlist_legal_terms": "He leído y acepto el <a href=\"terms.html\" target=\"_blank\">Aviso Legal</a> y la <a href=\"privacy.html\" target=\"_blank\">Política de Privacidad</a> *",
+    "waitlist_legal_marketing": "Acepto recibir novedades, ofertas exclusivas y rituales de Seven Beans",
+    "waitlist_error_terms": "Debes aceptar las condiciones y la política de privacidad",
     "waitlist_btn_submit": "¡Me apunto!",
     
     // Waitlist Success
@@ -303,6 +309,9 @@ window.translations = {
     "waitlist_label_phone": "Número de telèfon",
     "waitlist_label_whatsapp": "També vull rebre novetats per WhatsApp",
     "waitlist_label_whatsapp_num": "Número de WhatsApp",
+    "waitlist_legal_terms": "He llegit i accepto l'<a href=\"terms.html\" target=\"_blank\">Avís Legal</a> i la <a href=\"privacy.html\" target=\"_blank\">Política de Privacitat</a> *",
+    "waitlist_legal_marketing": "Accepto rebre novetats, ofertes exclusives i rituals de Seven Beans",
+    "waitlist_error_terms": "Has d'acceptar les condicions i la política de privacitat",
     "waitlist_btn_submit": "M'apunto!",
     
     // Waitlist Success
