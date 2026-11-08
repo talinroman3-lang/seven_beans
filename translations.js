@@ -10,7 +10,7 @@ window.translations = {
     "drawer_tagline": "better everyday food & daily rituals",
 
     // Hero
-    "hero_subtitle_1": "A new fast-casual restaurant<br>built around everyday food and daily rituals",
+    "hero_subtitle_1": "A new fast-casual restaurant:<br>specialty coffee and everyday food, cooked from scratch",
     "hero_location": "Coming soon to Barcelona",
     "hero_btn_waitlist": "Join Waiting List",
     "hero_voucher": "Get a 5€ voucher when you join",
@@ -23,8 +23,8 @@ window.translations = {
     "story_p3": "This story also inspired the world you'll discover inside Seven Beans. Oversized beans, giant plants and playful details remind us that small things grow.",
 
     // Location
-    "location_title": "Coming to Barcelona",
-    "location_text": "We're building something special in the heart of the city. A place that feels like it's always been here — warm, calm, and yours.",
+    "location_title": "Your Daily Food in Barcelona",
+    "location_text": "Scratch-made food, real ingredients, and specialty coffee in the heart of the city. From morning breakfasts to midday plates with roasted vegetables, quality meats, and fish — a place that feels like it's always been here: warm, calm, and yours.",
     "location_btn_map": "See on Google Maps",
 
     // Secret
@@ -147,7 +147,7 @@ window.translations = {
     "drawer_tagline": "mejor comida diaria y rituales diarios",
 
     // Hero
-    "hero_subtitle_1": "Un nuevo restaurante fast-casual creado para la comida del día a día y tus rituales diarios",
+    "hero_subtitle_1": "Un nuevo restaurante fast-casual:<br>café de especialidad y comida para tu día a día, hecha desde cero",
     "hero_location": "Próximamente en Barcelona",
     "hero_btn_waitlist": "Apuntarme a la lista",
     "hero_voucher": "Únete y llévate 5€ de regalo",
@@ -160,8 +160,8 @@ window.translations = {
     "story_p3": "Ese mismo cuento dio forma al universo que vas a encontrar dentro de Seven Beans: habichuelas gigantes, plantas descomunales y detalles inesperados para recordarnos que las cosas más grandes siempre empiezan desde abajo.",
 
     // Location
-    "location_title": "Próximamente en Barcelona",
-    "location_text": "Estamos creando algo especial en el corazón de la ciudad. Un lugar que se siente como si siempre hubiera estado aquí: cálido, en calma y tuyo",
+    "location_title": "Tu comida de cada día en Barcelona",
+    "location_text": "Comida hecha desde cero, ingredientes reales y café de especialidad en el corazón de la ciudad. Desde desayunos por la mañana hasta platos de mediodía con verduras asadas, carnes y pescado de calidad — un lugar que se siente como si siempre hubiera estado aquí: cálido, en calma y tuyo.",
     "location_btn_map": "Ver en Google Maps",
 
     // Secret
@@ -263,7 +263,7 @@ window.translations = {
     "drawer_tagline": "millor menjar diari i rituals diaris",
 
     // Hero
-    "hero_subtitle_1": "Un nou restaurant fast-casual pensat per al menjar del dia a dia i els teus rituals quotidians",
+    "hero_subtitle_1": "Un nou restaurant fast-casual:<br>cafè d'especialitat i menjar per al teu dia a dia, fet des de zero",
     "hero_location": "Molt aviat a Barcelona",
     "hero_btn_waitlist": "Apunta't a la llista",
     "hero_voucher": "Apunta't i emporta't 5€ de regal",
@@ -276,8 +276,8 @@ window.translations = {
     "story_p3": "Aquest mateix conte ha donat forma a l'univers que descobriràs dins de Seven Beans: mongetes gegants, plantes descomunals i detalls inesperats per recordar-nos que les coses més grans sempre comencen de ben petit",
 
     // Location
-    "location_title": "Pròximament a Barcelona",
-    "location_text": "Estem creant una cosa molt especial al cor de la ciutat. Un lloc que se sent com si sempre hagués estat aquí: càlid, en calma i teu",
+    "location_title": "El teu menjar de cada dia a Barcelona",
+    "location_text": "Menjar fet des de zero, ingredients reals i cafè d'especialitat al cor de la ciutat. Des d'esmorzars al matí fins a plats de migdia amb verdures rostides, carns i peix de qualitat — un lloc que se sent com si sempre hagués estat aquí: càlid, en calma i teu.",
     "location_btn_map": "Veure a Google Maps",
 
     // Secret
